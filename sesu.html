@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesu - Portofolio Kelompok</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sesu.css">
+    <script>document.documentElement.classList.add("sesu-js");</script>
+</head>
+
+<body>
+    <!-- ===== NAVBAR: sama di semua halaman, JANGAN DIUBAH ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand logo"><img src="img/logo.svg" alt="Logo Portofolio Teknik Informatika" width="200" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama" aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuUtama">
+                    <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sesu.html">Sesu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="zega.html">Zega</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rendy.html">Rendy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="jeri.html">Jeri</a></li>
+                    </ul>
+                    <a href="login.html" class="btn btn-utama btn-sm px-4">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ===== AKHIR NAVBAR ===== -->
+
+
+    <!-- ===== ISI HALAMAN: UBAH DI SINI SAJA ===== -->
+    <main>
+        <div class="sesu">
+        <div class="sesu-latar" aria-hidden="true"><canvas id="latar"></canvas>
+        <svg class="sesu-ranting kiri" viewBox="0 0 560 430" aria-hidden="true" focusable="false"><path class="bt" d="M-30 40C170 20 330 140 480 330" stroke-width="9"/><path class="bt" d="M-30 40C170 20 330 140 480 330" stroke-width="3" stroke="#3D7A55" stroke-opacity=".55" transform="translate(0 -2)"/><g transform="translate(51.7 39.6) rotate(60.5) scale(0.8)"><g class="dn l1" style="animation-delay:-3.3s;animation-duration:5.2s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(118.4 51.6) rotate(-35.2) scale(1)"><g class="dn l2" style="animation-delay:-4.5s;animation-duration:3.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(182.3 74) rotate(81.2) scale(0.8)"><g class="dn l3" style="animation-delay:-0.5s;animation-duration:3.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(243.8 106.2) rotate(-29) scale(1.1)"><g class="dn l4" style="animation-delay:-3.2s;animation-duration:5.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(303 147.6) rotate(98.7) scale(0.9)"><g class="dn l1" style="animation-delay:-4.9s;animation-duration:4.6s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(360.4 197.2) rotate(-7.5) scale(0.9)"><g class="dn l4" style="animation-delay:-2.7s;animation-duration:4.1s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(416.3 254.5) rotate(113.7) scale(0.8)"><g class="dn l2" style="animation-delay:-2.9s;animation-duration:4.2s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(462 307.5) rotate(-9.4) scale(0.8)"><g class="dn l2" style="animation-delay:-0.3s;animation-duration:4.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(480 330) rotate(52.3) scale(1.1)"><g class="dn l3" style="animation-delay:-1s;animation-duration:4.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(63.1 40.9)"><g class="rt" style="animation-delay:-1.5s;animation-duration:5.9s"><path class="bt" d="M0 0C21.1 40 39 97.5 58.3 138.2" stroke-width="4.2"/><g transform="translate(12.3 25.8) rotate(24.2) scale(0.8)"><g class="dn l3" style="animation-delay:-2.5s;animation-duration:5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(24.1 54.2) rotate(115.8) scale(1.1)"><g class="dn l3" style="animation-delay:-0.6s;animation-duration:3.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(35.5 83.5) rotate(19.9) scale(1)"><g class="dn l1" style="animation-delay:-2.1s;animation-duration:5.1s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(46.8 112) rotate(122.6) scale(0.9)"><g class="dn l3" style="animation-delay:-1.6s;animation-duration:4.7s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(58.3 138.2) rotate(9.6) scale(0.7)"><g class="dn l3" style="animation-delay:-4.2s;animation-duration:4.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(58.3 138.2) rotate(69.3) scale(1.1)"><g class="dn l3" style="animation-delay:-0.3s;animation-duration:4.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(129.3 54.6)"><g class="rt" style="animation-delay:-1.7s;animation-duration:6.5s"><path class="bt" d="M0 0C31.7 -19.3 55.7 -63 84.2 -85.5" stroke-width="4"/><g transform="translate(22.5 -18.4) rotate(-85.6) scale(0.9)"><g class="dn l1" style="animation-delay:-0.8s;animation-duration:4.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(43.3 -41.6) rotate(-4.4) scale(0.8)"><g class="dn l3" style="animation-delay:-3.7s;animation-duration:4.3s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(63.5 -65.4) rotate(-110.9) scale(0.6)"><g class="dn l4" style="animation-delay:-2.2s;animation-duration:4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(84.2 -85.5) rotate(5.2) scale(0.7)"><g class="dn l3" style="animation-delay:-2.8s;animation-duration:5.6s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(84.2 -85.5) rotate(-33.2) scale(1.1)"><g class="dn l2" style="animation-delay:-1.9s;animation-duration:3.7s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(192.7 78.7)"><g class="rt" style="animation-delay:-1.4s;animation-duration:6.7s"><path class="bt" d="M0 0C28.9 49.7 47.9 124.1 73.4 175.3" stroke-width="3.9"/><g transform="translate(11.8 22.7) rotate(17.8) scale(0.7)"><g class="dn l3" style="animation-delay:-2.1s;animation-duration:4.7s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(22.7 47.5) rotate(116) scale(0.7)"><g class="dn l4" style="animation-delay:-4.3s;animation-duration:4.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(33 73.7) rotate(10.1) scale(0.9)"><g class="dn l4" style="animation-delay:-4.4s;animation-duration:4.3s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(42.9 100.5) rotate(120.2) scale(0.7)"><g class="dn l1" style="animation-delay:-3.2s;animation-duration:3.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(52.7 126.9) rotate(3.5) scale(0.8)"><g class="dn l4" style="animation-delay:-0.5s;animation-duration:3.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(62.8 152.1) rotate(107.2) scale(0.6)"><g class="dn l3" style="animation-delay:-0.5s;animation-duration:4.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(73.4 175.3) rotate(21.7) scale(0.6)"><g class="dn l3" style="animation-delay:-1.9s;animation-duration:5.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(73.4 175.3) rotate(66.4) scale(1.1)"><g class="dn l1" style="animation-delay:-2.4s;animation-duration:5.3s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(253.8 112.5)"><g class="rt" style="animation-delay:-2.9s;animation-duration:5.7s"><path class="bt" d="M0 0C38.8 -22.8 91.9 -50.8 131 -73.2" stroke-width="3.2"/><g transform="translate(24.8 -14.2) rotate(-78.3) scale(0.8)"><g class="dn l2" style="animation-delay:-4.1s;animation-duration:4.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(51.6 -29.2) rotate(16.4) scale(1.1)"><g class="dn l4" style="animation-delay:-1.8s;animation-duration:5.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(79.2 -44.3) rotate(-88.5) scale(0.7)"><g class="dn l1" style="animation-delay:-3.2s;animation-duration:4.9s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(106.1 -59.1) rotate(17.7) scale(0.7)"><g class="dn l2" style="animation-delay:-0.8s;animation-duration:4.6s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(131 -73.2) rotate(-90.1) scale(0.6)"><g class="dn l2" style="animation-delay:-1.1s;animation-duration:5.2s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(131 -73.2) rotate(-20.9) scale(1.1)"><g class="dn l2" style="animation-delay:-3.7s;animation-duration:3.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(312.7 155.3)"><g class="rt" style="animation-delay:-5.9s;animation-duration:7.5s"><path class="bt" d="M0 0C-5.4 51.1 5.6 118.9 3.4 170" stroke-width="3.7"/><g transform="translate(-1.5 26.8) rotate(45.7) scale(1)"><g class="dn l3" style="animation-delay:-1.7s;animation-duration:5.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(-1 55.4) rotate(137.3) scale(0.8)"><g class="dn l2" style="animation-delay:-1.1s;animation-duration:4.1s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(0.5 85) rotate(34) scale(1.1)"><g class="dn l1" style="animation-delay:-3.1s;animation-duration:4.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(2.3 114.6) rotate(143.7) scale(0.9)"><g class="dn l1" style="animation-delay:-0.4s;animation-duration:5.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(3.6 143.2) rotate(28.2) scale(0.9)"><g class="dn l2" style="animation-delay:-2.4s;animation-duration:4.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(3.4 170) rotate(149) scale(0.6)"><g class="dn l3" style="animation-delay:-4.7s;animation-duration:4.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(3.4 170) rotate(99.3) scale(1.1)"><g class="dn l2" style="animation-delay:-0.4s;animation-duration:3.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(379.2 215.5)"><g class="rt" style="animation-delay:-5.4s;animation-duration:7.5s"><path class="bt" d="M0 0C36.6 -7.3 83.5 10.6 119.7 8.3" stroke-width="3.2"/><g transform="translate(29 -1.4) rotate(-58) scale(1.2)"><g class="dn l3" style="animation-delay:-3.3s;animation-duration:3.7s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(60 2.3) rotate(63.2) scale(0.6)"><g class="dn l1" style="animation-delay:-4s;animation-duration:4.6s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(90.9 7) rotate(-57.3) scale(0.8)"><g class="dn l2" style="animation-delay:-4.4s;animation-duration:3.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(119.7 8.3) rotate(41.8) scale(0.7)"><g class="dn l3" style="animation-delay:-3.8s;animation-duration:4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(119.7 8.3) rotate(-6) scale(1.1)"><g class="dn l3" style="animation-delay:-0.7s;animation-duration:5.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(434.7 275.2)"><g class="rt" style="animation-delay:-3.1s;animation-duration:7.6s"><path class="bt" d="M0 0C-15.3 27.3 -11.3 69.2 -22.4 97.5" stroke-width="4.3"/><g transform="translate(-8.4 22.8) rotate(60) scale(0.8)"><g class="dn l3" style="animation-delay:-2.6s;animation-duration:5.1s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(-12.8 48.4) rotate(153.3) scale(1)"><g class="dn l2" style="animation-delay:-0.7s;animation-duration:4.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(-16.4 74.2) rotate(40.8) scale(0.8)"><g class="dn l4" style="animation-delay:-1.6s;animation-duration:4.6s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(-22.4 97.5) rotate(163.8) scale(0.8)"><g class="dn l1" style="animation-delay:-4.4s;animation-duration:3.9s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(-22.4 97.5) rotate(105) scale(1.1)"><g class="dn l4" style="animation-delay:-3.9s;animation-duration:4.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g></svg>
+        <svg class="sesu-ranting kanan" viewBox="0 0 560 430" aria-hidden="true" focusable="false"><path class="bt" d="M-30 40C170 20 330 140 480 330" stroke-width="9"/><path class="bt" d="M-30 40C170 20 330 140 480 330" stroke-width="3" stroke="#3D7A55" stroke-opacity=".55" transform="translate(0 -2)"/><g transform="translate(51.7 39.6) rotate(73.7) scale(1.1)"><g class="dn l1" style="animation-delay:-4.5s;animation-duration:3.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(118.4 51.6) rotate(-39.9) scale(0.9)"><g class="dn l2" style="animation-delay:-1.8s;animation-duration:4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(182.3 74) rotate(72) scale(1)"><g class="dn l1" style="animation-delay:-4.5s;animation-duration:3.6s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(243.8 106.2) rotate(-32.2) scale(0.9)"><g class="dn l3" style="animation-delay:-2.6s;animation-duration:4.2s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(303 147.6) rotate(87.3) scale(1)"><g class="dn l2" style="animation-delay:-2.9s;animation-duration:4.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(360.4 197.2) rotate(-25.9) scale(0.9)"><g class="dn l3" style="animation-delay:-3.8s;animation-duration:5.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(416.3 254.5) rotate(102) scale(1.1)"><g class="dn l3" style="animation-delay:-2.9s;animation-duration:3.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(462 307.5) rotate(-7.9) scale(1)"><g class="dn l2" style="animation-delay:-3.4s;animation-duration:3.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(480 330) rotate(45.3) scale(1.1)"><g class="dn l3" style="animation-delay:-1s;animation-duration:4.9s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(63.1 40.9)"><g class="rt" style="animation-delay:-0.5s;animation-duration:6.6s"><path class="bt" d="M0 0C22.3 39.2 57.4 87.9 80.7 126.5" stroke-width="3.9"/><g transform="translate(14.7 24.5) rotate(-6.5) scale(0.8)"><g class="dn l1" style="animation-delay:-2.9s;animation-duration:4.2s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(31.3 50.3) rotate(104.3) scale(0.8)"><g class="dn l4" style="animation-delay:-3.9s;animation-duration:3.9s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(48.7 76.6) rotate(12.6) scale(0.9)"><g class="dn l3" style="animation-delay:-0.6s;animation-duration:3.9s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(65.5 102.3) rotate(111.3) scale(0.9)"><g class="dn l3" style="animation-delay:-3s;animation-duration:3.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(80.7 126.5) rotate(-6.4) scale(0.5)"><g class="dn l1" style="animation-delay:-2.1s;animation-duration:3.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(80.7 126.5) rotate(51.2) scale(1.1)"><g class="dn l2" style="animation-delay:-0.1s;animation-duration:5.2s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(129.3 54.6)"><g class="rt" style="animation-delay:-5.9s;animation-duration:7.4s"><path class="bt" d="M0 0C26.5 -24.4 59.7 -59.1 85.8 -83.9" stroke-width="3.5"/><g transform="translate(20.9 -19.9) rotate(-109.7) scale(0.9)"><g class="dn l1" style="animation-delay:-1s;animation-duration:4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(43 -41.8) rotate(9.3) scale(1)"><g class="dn l3" style="animation-delay:-2.3s;animation-duration:3.9s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(65.1 -63.8) rotate(-87.4) scale(0.8)"><g class="dn l4" style="animation-delay:-0.8s;animation-duration:4.6s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(85.8 -83.9) rotate(2.7) scale(0.6)"><g class="dn l1" style="animation-delay:-0.8s;animation-duration:4.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(85.8 -83.9) rotate(-47.9) scale(1.1)"><g class="dn l2" style="animation-delay:-4.5s;animation-duration:5.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(192.7 78.7)"><g class="rt" style="animation-delay:-4.2s;animation-duration:7.6s"><path class="bt" d="M0 0C12.7 55.6 22.9 131 34.4 186.9" stroke-width="4"/><g transform="translate(5.3 24.9) rotate(32.5) scale(0.9)"><g class="dn l4" style="animation-delay:-2s;animation-duration:4.7s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(10.4 51.6) rotate(121) scale(0.8)"><g class="dn l2" style="animation-delay:-0.1s;animation-duration:4.1s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(15.3 79.3) rotate(25.7) scale(1)"><g class="dn l1" style="animation-delay:-1.2s;animation-duration:4.1s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(20 107.4) rotate(138.3) scale(0.7)"><g class="dn l3" style="animation-delay:-4.4s;animation-duration:5.2s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(24.8 135.1) rotate(14.5) scale(0.7)"><g class="dn l1" style="animation-delay:-1.7s;animation-duration:5.1s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(29.5 161.8) rotate(123.2) scale(0.9)"><g class="dn l1" style="animation-delay:-1s;animation-duration:3.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(34.4 186.9) rotate(26.7) scale(0.7)"><g class="dn l3" style="animation-delay:-0.4s;animation-duration:4.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(34.4 186.9) rotate(83.6) scale(1.1)"><g class="dn l4" style="animation-delay:-2.7s;animation-duration:3.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(253.8 112.5)"><g class="rt" style="animation-delay:-6s;animation-duration:6.1s"><path class="bt" d="M0 0C40.7 -20.2 100.8 -29.6 142.5 -46.7" stroke-width="3.1"/><g transform="translate(26.5 -11) rotate(-82.6) scale(0.9)"><g class="dn l3" style="animation-delay:-0.1s;animation-duration:4.7s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(55.7 -20.2) rotate(31.5) scale(0.8)"><g class="dn l3" style="animation-delay:-1.7s;animation-duration:4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(86.1 -28.7) rotate(-79.6) scale(0.7)"><g class="dn l3" style="animation-delay:-0.2s;animation-duration:5.1s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(115.6 -37.2) rotate(45.7) scale(0.8)"><g class="dn l3" style="animation-delay:-3.5s;animation-duration:3.9s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(142.5 -46.7) rotate(-69.2) scale(0.8)"><g class="dn l1" style="animation-delay:-2.5s;animation-duration:4.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(142.5 -46.7) rotate(-8.6) scale(1.1)"><g class="dn l3" style="animation-delay:-1.4s;animation-duration:3.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(312.7 155.3)"><g class="rt" style="animation-delay:-0.7s;animation-duration:7.4s"><path class="bt" d="M0 0C2.9 51.5 28.8 115.5 35.6 166.2" stroke-width="3.8"/><g transform="translate(3.2 26.7) rotate(28.1) scale(0.9)"><g class="dn l2" style="animation-delay:-0.4s;animation-duration:4.2s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(9 54.7) rotate(120.4) scale(1.1)"><g class="dn l4" style="animation-delay:-0.5s;animation-duration:4.3s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(16.4 83.4) rotate(17.4) scale(0.8)"><g class="dn l4" style="animation-delay:-0.4s;animation-duration:3.8s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(24 112) rotate(140.7) scale(1)"><g class="dn l1" style="animation-delay:-0.9s;animation-duration:3.7s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(30.8 139.9) rotate(19.8) scale(0.9)"><g class="dn l3" style="animation-delay:-1.5s;animation-duration:4.7s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(35.6 166.2) rotate(142.4) scale(0.8)"><g class="dn l4" style="animation-delay:-3s;animation-duration:3.6s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(35.6 166.2) rotate(69.2) scale(1.1)"><g class="dn l2" style="animation-delay:-1.8s;animation-duration:5.3s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(379.2 215.5)"><g class="rt" style="animation-delay:-1.9s;animation-duration:7s"><path class="bt" d="M0 0C36.1 -0.8 83.9 4 119.9 4.3" stroke-width="3.8"/><g transform="translate(28.9 0.3) rotate(-60.4) scale(0.9)"><g class="dn l2" style="animation-delay:-1.8s;animation-duration:5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(60 1.8) rotate(67.2) scale(0.8)"><g class="dn l2" style="animation-delay:-4.4s;animation-duration:4.2s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(91.1 3.4) rotate(-62.8) scale(0.7)"><g class="dn l3" style="animation-delay:-4.6s;animation-duration:4.3s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(119.9 4.3) rotate(59.2) scale(0.8)"><g class="dn l2" style="animation-delay:-2.7s;animation-duration:4.1s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(119.9 4.3) rotate(-1.8) scale(1.1)"><g class="dn l3" style="animation-delay:-0.2s;animation-duration:4.4s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g><g transform="translate(434.7 275.2)"><g class="rt" style="animation-delay:-2.2s;animation-duration:7.9s"><path class="bt" d="M0 0C-12.5 29.8 5 70.1 -1.5 100" stroke-width="3.1"/><g transform="translate(-4.6 24) rotate(43.8) scale(1.1)"><g class="dn l3" style="animation-delay:-2s;animation-duration:4.7s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(-3 50) rotate(148.7) scale(0.9)"><g class="dn l3" style="animation-delay:-3.1s;animation-duration:5.2s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(-0.3 75.9) rotate(41.7) scale(0.8)"><g class="dn l3" style="animation-delay:-1s;animation-duration:5.6s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(-1.5 100) rotate(154.1) scale(0.5)"><g class="dn l3" style="animation-delay:-3.2s;animation-duration:3.5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g><g transform="translate(-1.5 100) rotate(89.2) scale(1.1)"><g class="dn l3" style="animation-delay:-2s;animation-duration:5s"><path d="M0 0C8-13 30-15 46 0C30 15 8 13 0 0Z"/><path class="urat" d="M2 0L40 0"/></g></g></g></g></svg>
+        </div>
+        <div class="sesu-intro" aria-hidden="true">
+            <div class="sesu-logo-s">S</div>
+            <div class="sesu-intro-nama">SESU</div>
+        </div>
+        <svg class="sesu-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs>
+<symbol id="pinus" viewBox="0 0 20 40"><path d="M10 0L16 12H13L18.5 24H14.5L20 36H11V40H9V36H0L5.5 24H1.5L7 12H4Z"/></symbol>
+<linearGradient id="gSk1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A2230"/><stop offset="0.55" stop-color="#16605A"/><stop offset="1" stop-color="#8FE0A8"/></linearGradient>
+<linearGradient id="gSk2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050E0A"/><stop offset="0.6" stop-color="#0B2A1D"/><stop offset="1" stop-color="#1A5A3C"/></linearGradient>
+<linearGradient id="gSk3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A1D33"/><stop offset="0.55" stop-color="#14566A"/><stop offset="1" stop-color="#7FD9C4"/></linearGradient>
+<linearGradient id="gMa1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FA58B"/><stop offset="1" stop-color="#14513F"/></linearGradient>
+<linearGradient id="gMa2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1F6B4E"/><stop offset="1" stop-color="#0A2E22"/></linearGradient>
+<linearGradient id="gMb1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2C6B55"/><stop offset="1" stop-color="#0E3226"/></linearGradient>
+<linearGradient id="gMb2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#143F2E"/><stop offset="1" stop-color="#071A12"/></linearGradient>
+<linearGradient id="gMc1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BA6B0"/><stop offset="1" stop-color="#17506A"/></linearGradient>
+<linearGradient id="gMc2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1F6A5E"/><stop offset="1" stop-color="#0A2D2A"/></linearGradient>
+<radialGradient id="gSun"><stop offset="0" stop-color="#F4FFB0" stop-opacity="0.85"/><stop offset="1" stop-color="#F4FFB0" stop-opacity="0"/></radialGradient>
+<radialGradient id="gKabut"><stop offset="0" stop-color="#E6FFF0" stop-opacity="0.75"/><stop offset="1" stop-color="#E6FFF0" stop-opacity="0"/></radialGradient>
+<linearGradient id="gPunggung1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1E6B4B" stop-opacity="0.5"/><stop offset="1" stop-color="#0B2A1E" stop-opacity="0.85"/></linearGradient>
+<linearGradient id="gPunggung2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F3E2B" stop-opacity="0.85"/><stop offset="1" stop-color="#06140E"/></linearGradient>
+</defs></svg>
+        <div class="sesu-kursor" aria-hidden="true"><i></i></div>
+
+        <nav class="sesu-sub" aria-label="Menu profil Sesu">
+            <ul class="sesu-pil">
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#proyek">Karya</a></li>
+                <li><a href="#perjalanan">Perjalanan</a></li>
+            </ul>
+        </nav>
+
+        <section class="sesu-hero" id="profil">
+            <div class="container">
+                <div class="sesu-hero-grid">
+                    <div class="sesu-hero-teks">
+                        <p class="sesu-sapa sesu-masuk" style="--d: 0s">Hai, saya</p>
+                        <h1 class="sesu-nama sesu-masuk" style="--d: 0.1s">Sesu</h1>
+                        <p class="sesu-nama-lengkap sesu-masuk" style="--d: 0.18s">(Sesuaikan Laia)</p>
+                        <p class="sesu-peran sesu-masuk" style="--d: 0.26s">Mahasiswa Teknik Informatika</p>
+                        <p class="sesu-ketik sesu-masuk" style="--d: 0.34s">Sedang belajar <b id="ketik">Web Front-End</b><span class="sesu-garis-ketik"></span></p>
+                        <div class="sesu-aksi sesu-masuk" style="--d: 0.44s">
+                            <a href="#proyek" class="sesu-btn sesu-btn-oranye">Lihat Karya</a>
+                            <a href="#tentang" class="sesu-btn sesu-btn-garis">Tentang Saya</a>
+                        </div>
+                        <ul class="sesu-statistik sesu-masuk" style="--d: 0.54s">
+                            <li><b>3</b><span>Proyek</span></li>
+                            <li><b>6</b><span>Teknologi</span></li>
+                            <li><b>S1</b><span>Jenjang</span></li>
+                        </ul>
+                    </div>
+                    <div class="sesu-foto-area sesu-masuk" style="--d: 0.3s" id="fotoArea">
+                        <div class="sesu-bingkai" id="bingkai">
+                            <div class="sesu-foto-isi"><img src="img/sesu-foto.jpg" alt="Foto profil Sesu" width="600" height="600"></div>
+                            <span class="sesu-lencana">&lt;/&gt; Front-End Learner</span>
+                        </div>
+                        <span class="sesu-chip sesu-chip-1">HTML5</span>
+                        <span class="sesu-chip sesu-chip-2">CSS3</span>
+                        <span class="sesu-chip sesu-chip-3">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sesu-pita" aria-hidden="true">
+            <div class="sesu-pita-isi"><div><span>HTML5</span><span>CSS3</span><span>Bootstrap 5</span><span>JavaScript</span><span>Figma</span><span>Python</span><span>Responsif</span><span>Prototype</span></div><div><span>HTML5</span><span>CSS3</span><span>Bootstrap 5</span><span>JavaScript</span><span>Figma</span><span>Python</span><span>Responsif</span><span>Prototype</span></div></div>
+        </div>
+
+        <section class="sesu-raksasa" aria-hidden="true">
+            <div class="sesu-kata sesu-kata-1" data-arah="1">WEB <span>FRONT-END</span></div>
+            <div class="sesu-kata sesu-kata-2" data-arah="-1">DESAIN <span>RESPONSIF</span></div>
+        </section>
+
+        <section class="sesu-bagian" id="tentang">
+            <div class="container">
+                <h2 class="sesu-judul sesu-reveal">Tentang</h2>
+                <p class="sesu-sub-judul sesu-reveal">Mahasiswa yang belajar dengan cara langsung mencoba.</p>
+                <div class="sesu-tentang-grid">
+                    <div class="sesu-tentang-teks sesu-reveal">
+                        <span class="sesu-label">Tentang saya</span>
+                        <h3>Paham alurnya dulu, baru menulis kodenya.</h3>
+                        <p>Saya mahasiswa Teknik Informatika yang suka belajar dengan cara langsung mencoba. Mulai dari menulis tag HTML pertama sampai membuat website lima halaman, semuanya saya pelajari selangkah demi selangkah.</p>
+                        <p>Setiap proyek di portofolio ini saya tulis sendiri dan siap saya jelaskan bagian per bagian.</p>
+                        <ul class="sesu-data">
+                            <li><span>Nama</span><b>Sesu</b></li>
+                            <li><span>Program studi</span><b>Teknik Informatika</b></li>
+                            <li><span>Kampus</span><b>Universitas Mikroskil</b></li>
+                            <li><span>Kelompok</span><b>Portofolio Kelompok</b></li>
+                            <li><span>Fokus</span><b>Web Front-End</b></li>
+                            <li><span>Lokasi</span><b>Indonesia</b></li>
+                        </ul>
+                    </div>
+                    <div class="sesu-tentang-gambar sesu-reveal" style="--urut: 1">
+                        <div class="sesu-kampus">
+                            <img src="img/kampus.jpg" alt="Gedung kampus Universitas Mikroskil">
+                            <span class="sesu-lencana">Universitas Mikroskil</span>
+                        </div>
+                        <div class="sesu-angka">
+                            <div><b data-hitung="3">3</b><span>Proyek</span></div>
+                            <div><b data-hitung="6">6</b><span>Teknologi</span></div>
+                            <div><b>S1</b><span>Jenjang</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sesu-alur">
+            <div class="container">
+                <p class="sesu-eyebrow sesu-reveal">Cara belajar / Proses</p>
+                <h2 class="sesu-alur-judul sesu-reveal">COBA <i>&rarr;</i> <span>PAHAM</span></h2>
+                <p class="sesu-alur-teks sesu-reveal">Saya tidak sekadar menyalin kode. Setiap baris dicoba, dibuat salah, diperbaiki, lalu dipahami alurnya. <b>Setiap langkah punya alasan.</b></p>
+                <ul class="sesu-langkah">
+                    <li class="sesu-reveal"><span class="sesu-ikon-bulat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 5l-4 14"/></svg></span><b>Coba</b></li>
+                    <li class="sesu-reveal" style="--urut: 1"><span class="sesu-ikon-bulat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.5-5.8M20 4v5h-5"/></svg></span><b>Perbaiki</b></li>
+                    <li class="sesu-reveal" style="--urut: 2"><span class="sesu-ikon-bulat"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></span><b>Paham</b></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sesu-bagian" id="keahlian">
+            <div class="container">
+                <h2 class="sesu-judul sesu-reveal">Keahlian</h2>
+                <p class="sesu-sub-judul sesu-reveal">Yang sudah bisa dan yang masih saya pelajari.</p>
+                <div class="sesu-skill-grid">
+                    <article class="sesu-kartu-skill sesu-reveal">
+                        <i class="sesu-scan" aria-hidden="true"></i>
+                        <div class="sesu-hud" aria-hidden="true"><span>MOD-01</span><span class="sesu-led-teks"><span class="sesu-led"></span>BISA</span></div>
+                        <span class="sesu-ikon-kotak"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 5l-4 14"/></svg></span>
+                        <h3>HTML5</h3>
+                        <p>Buat kerangka halaman: heading, tabel, daftar, dan form.</p>
+                        <div class="sesu-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+                        <span class="sesu-status">Lumayan lancar</span>
+                    </article>
+                    <article class="sesu-kartu-skill sesu-reveal" style="--urut: 1">
+                        <i class="sesu-scan" aria-hidden="true"></i>
+                        <div class="sesu-hud" aria-hidden="true"><span>MOD-02</span><span class="sesu-led-teks"><span class="sesu-led"></span>BISA</span></div>
+                        <span class="sesu-ikon-kotak"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 1.5-2s0-2 1.5-2h2a3 3 0 0 0 3-3A9 9 0 0 0 12 3z"/><circle cx="8" cy="11" r="1"/><circle cx="12" cy="7.5" r="1"/><circle cx="16" cy="11" r="1"/></svg></span>
+                        <h3>CSS3</h3>
+                        <p>Atur warna, jarak, dan tata letak pakai flex dan grid.</p>
+                        <div class="sesu-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+                        <span class="sesu-status">Lumayan lancar</span>
+                    </article>
+                    <article class="sesu-kartu-skill sesu-reveal" style="--urut: 2">
+                        <i class="sesu-scan" aria-hidden="true"></i>
+                        <div class="sesu-hud" aria-hidden="true"><span>MOD-03</span><span class="sesu-led-teks"><span class="sesu-led"></span>BISA</span></div>
+                        <span class="sesu-ikon-kotak"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg></span>
+                        <h3>Bootstrap 5</h3>
+                        <p>Pakai grid dan navbar bawaan biar tampilan rapi di HP.</p>
+                        <div class="sesu-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+                        <span class="sesu-status">Lumayan lancar</span>
+                    </article>
+                    <article class="sesu-kartu-skill sesu-reveal">
+                        <i class="sesu-scan" aria-hidden="true"></i>
+                        <div class="sesu-hud" aria-hidden="true"><span>MOD-04</span><span class="sesu-led-teks"><span class="sesu-led belajar"></span>BELAJAR</span></div>
+                        <span class="sesu-ikon-kotak"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4c-2 0-3 1-3 3v2c0 1-1 2-2 3 1 1 2 2 2 3v2c0 2 1 3 3 3M15 4c2 0 3 1 3 3v2c0 1 1 2 2 3-1 1-2 2-2 3v2c0 2-1 3-3 3"/></svg></span>
+                        <h3>JavaScript</h3>
+                        <p>Baru belajar dasar: ubah isi halaman dan cek isian form.</p>
+                        <div class="sesu-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+                        <span class="sesu-status belajar">Baru mulai</span>
+                    </article>
+                    <article class="sesu-kartu-skill sesu-reveal" style="--urut: 1">
+                        <i class="sesu-scan" aria-hidden="true"></i>
+                        <div class="sesu-hud" aria-hidden="true"><span>MOD-05</span><span class="sesu-led-teks"><span class="sesu-led"></span>BISA</span></div>
+                        <span class="sesu-ikon-kotak"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11a2.1 2.1 0 0 0-3-3L5 16z"/><path d="M14 7l3 3"/></svg></span>
+                        <h3>Figma</h3>
+                        <p>Bikin rancangan halaman dan prototype sebelum dikodekan.</p>
+                        <div class="sesu-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+                        <span class="sesu-status">Lumayan lancar</span>
+                    </article>
+                    <article class="sesu-kartu-skill sesu-reveal" style="--urut: 2">
+                        <i class="sesu-scan" aria-hidden="true"></i>
+                        <div class="sesu-hud" aria-hidden="true"><span>MOD-06</span><span class="sesu-led-teks"><span class="sesu-led belajar"></span>BELAJAR</span></div>
+                        <span class="sesu-ikon-kotak"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 10l3 2-3 2M13 15h4"/></svg></span>
+                        <h3>Python</h3>
+                        <p>Baru belajar dasar logika dan cara menyelesaikan soal.</p>
+                        <div class="sesu-bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+                        <span class="sesu-status belajar">Baru mulai</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="sesu-bagian" id="proyek">
+            <svg class="sesu-punggung" viewBox="0 0 1440 240" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 62.3 L8 68.6 L16 75.9 L24 80.2 L32 88.0 L40 94.8 L48 99.8 L56 104.9 L64 110.0 L72 110.0 L80 110.7 L88 113.9 L96 115.4 L104 117.9 L112 117.0 L120 118.2 L128 112.8 L136 114.0 L144 111.7 L152 104.3 L160 106.0 L168 104.5 L176 113.4 L184 118.5 L192 125.2 L200 133.6 L208 134.6 L216 141.9 L224 144.3 L232 149.0 L240 151.5 L248 150.5 L256 153.4 L264 150.3 L272 145.9 L280 142.8 L288 144.0 L296 142.7 L304 136.9 L312 134.2 L320 127.8 L328 119.3 L336 113.3 L344 111.1 L352 107.8 L360 111.1 L368 113.9 L376 118.0 L384 118.1 L392 121.4 L400 118.1 L408 118.5 L416 118.2 L424 118.5 L432 112.7 L440 114.2 L448 111.9 L456 106.7 L464 98.1 L472 98.0 L480 87.8 L488 80.0 L496 73.6 L504 69.0 L512 61.4 L520 56.6 L528 56.2 L536 60.6 L544 72.9 L552 77.6 L560 84.1 L568 94.7 L576 101.6 L584 103.2 L592 110.7 L600 116.7 L608 120.3 L616 125.4 L624 128.2 L632 131.1 L640 130.3 L648 132.5 L656 127.1 L664 125.7 L672 126.8 L680 128.2 L688 122.0 L696 122.1 L704 117.2 L712 115.3 L720 115.9 L728 124.4 L736 128.2 L744 133.4 L752 136.1 L760 136.7 L768 142.3 L776 143.4 L784 145.6 L792 147.9 L800 151.4 L808 150.9 L816 148.9 L824 144.1 L832 142.3 L840 134.5 L848 135.2 L856 130.7 L864 121.5 L872 115.7 L880 113.1 L888 104.2 L896 96.5 L904 94.0 L912 96.5 L920 97.8 L928 101.8 L936 100.3 L944 104.3 L952 105.8 L960 106.4 L968 100.6 L976 100.2 L984 98.1 L992 92.6 L1000 91.3 L1008 89.2 L1016 81.5 L1024 78.1 L1032 83.6 L1040 78.1 L1048 81.1 L1056 82.2 L1064 78.1 L1072 74.6 L1080 74.9 L1088 82.3 L1096 86.4 L1104 98.5 L1112 101.5 L1120 110.4 L1128 114.7 L1136 121.1 L1144 127.6 L1152 132.4 L1160 131.6 L1168 137.0 L1176 140.2 L1184 139.2 L1192 138.4 L1200 142.9 L1208 139.2 L1216 139.6 L1224 132.9 L1232 135.0 L1240 126.0 L1248 124.0 L1256 120.1 L1264 115.4 L1272 120.5 L1280 124.0 L1288 130.3 L1296 132.9 L1304 134.6 L1312 137.4 L1320 141.6 L1328 141.1 L1336 140.8 L1344 140.9 L1352 145.6 L1360 140.6 L1368 140.7 L1376 133.1 L1384 130.9 L1392 127.4 L1400 121.0 L1408 115.9 L1416 111.7 L1424 100.0 L1432 98.9 L1440 91.7 L1440 240 L0 240 Z" fill="url(#gPunggung1)"/><path d="M488.0 80.0 L496.0 73.6 L504.0 69.0 L512.0 61.4 L520.0 56.6 L528.0 56.2 L536.0 60.6 L544.0 72.9 L552.0 77.6 L552.0 75.2 L541.3 71.2 L530.7 75.2 L520.0 71.2 L509.3 75.2 L498.7 71.2 L488.0 75.2Z" fill="#F1FFF6" fill-opacity="0.88"/><path d="M984.0 98.1 L992.0 92.6 L1000.0 91.3 L1008.0 89.2 L1016.0 81.5 L1024.0 78.1 L1032.0 83.6 L1040.0 78.1 L1048.0 81.1 L1056.0 82.2 L1064.0 78.1 L1072.0 74.6 L1080.0 74.9 L1088.0 82.3 L1096.0 86.4 L1104.0 98.5 L1104.0 93.6 L1084.0 89.6 L1064.0 93.6 L1044.0 89.6 L1024.0 93.6 L1004.0 89.6 L984.0 93.6Z" fill="#F1FFF6" fill-opacity="0.88"/><path d="M880.0 113.1 L888.0 104.2 L896.0 96.5 L904.0 94.0 L912.0 96.5 L920.0 97.8 L928.0 101.8 L936.0 100.3 L944.0 104.3 L952.0 105.8 L960.0 106.4 L968.0 100.6 L976.0 100.2 L984.0 98.1 L992.0 92.6 L1000.0 91.3 L1008.0 89.2 L1016.0 81.5 L1024.0 78.1 L1032.0 83.6 L1040.0 78.1 L1048.0 81.1 L1056.0 82.2 L1064.0 78.1 L1072.0 74.6 L1080.0 74.9 L1088.0 82.3 L1096.0 86.4 L1104.0 98.5 L1112.0 101.5 L1120.0 110.4 L1128.0 114.7 L1128.0 113.0 L1086.7 109.0 L1045.3 113.0 L1004.0 109.0 L962.7 113.0 L921.3 109.0 L880.0 113.0Z" fill="#F1FFF6" fill-opacity="0.88"/><path d="M0.0 62.3 L8.0 68.6 L16.0 75.9 L24.0 80.2 L32.0 88.0 L40.0 94.8 L48.0 99.8 L56.0 104.9 L64.0 110.0 L72.0 110.0 L80.0 110.7 L88.0 113.9 L96.0 115.4 L104.0 117.9 L112.0 117.0 L120.0 118.2 L128.0 112.8 L136.0 114.0 L144.0 111.7 L152.0 104.3 L160.0 106.0 L168.0 104.5 L176.0 113.4 L184.0 118.5 L192.0 125.2 L192.0 123.3 L160.0 119.3 L128.0 123.3 L96.0 119.3 L64.0 123.3 L32.0 119.3 L0.0 123.3Z" fill="#F1FFF6" fill-opacity="0.88"/><path d="M320.0 127.8 L328.0 119.3 L336.0 113.3 L344.0 111.1 L352.0 107.8 L360.0 111.1 L368.0 113.9 L376.0 118.0 L384.0 118.1 L392.0 121.4 L400.0 118.1 L408.0 118.5 L416.0 118.2 L424.0 118.5 L432.0 112.7 L440.0 114.2 L448.0 111.9 L456.0 106.7 L464.0 98.1 L472.0 98.0 L480.0 87.8 L488.0 80.0 L496.0 73.6 L504.0 69.0 L512.0 61.4 L520.0 56.6 L528.0 56.2 L536.0 60.6 L544.0 72.9 L552.0 77.6 L560.0 84.1 L568.0 94.7 L576.0 101.6 L584.0 103.2 L592.0 110.7 L600.0 116.7 L608.0 120.3 L616.0 125.4 L624.0 128.2 L624.0 126.8 L573.3 122.8 L522.7 126.8 L472.0 122.8 L421.3 126.8 L370.7 122.8 L320.0 126.8Z" fill="#F1FFF6" fill-opacity="0.88"/><path d="M0 158.8 L8 164.3 L16 162.6 L24 165.7 L32 163.9 L40 160.6 L48 162.3 L56 160.3 L64 158.7 L72 166.5 L80 170.7 L88 178.3 L96 183.4 L104 186.1 L112 188.4 L120 187.3 L128 192.5 L136 187.9 L144 184.2 L152 181.7 L160 180.3 L168 174.7 L176 167.0 L184 161.8 L192 148.8 L200 149.0 L208 151.1 L216 153.8 L224 153.1 L232 156.8 L240 158.2 L248 154.9 L256 151.8 L264 146.0 L272 145.8 L280 135.3 L288 135.1 L296 137.3 L304 133.7 L312 131.2 L320 131.3 L328 130.0 L336 140.4 L344 149.1 L352 159.1 L360 161.5 L368 169.4 L376 177.2 L384 180.9 L392 181.9 L400 182.7 L408 181.6 L416 183.7 L424 181.0 L432 177.2 L440 176.8 L448 167.1 L456 165.1 L464 161.7 L472 166.9 L480 171.1 L488 178.3 L496 178.9 L504 180.1 L512 181.3 L520 179.4 L528 178.1 L536 173.1 L544 167.8 L552 162.3 L560 154.9 L568 147.4 L576 141.6 L584 131.2 L592 121.5 L600 126.4 L608 124.3 L616 126.3 L624 133.8 L632 140.4 L640 144.3 L648 150.4 L656 155.7 L664 157.1 L672 161.1 L680 165.6 L688 162.3 L696 162.3 L704 159.2 L712 157.8 L720 154.2 L728 159.1 L736 162.7 L744 171.9 L752 178.1 L760 179.8 L768 183.4 L776 185.4 L784 190.4 L792 187.4 L800 188.0 L808 185.6 L816 181.4 L824 176.7 L832 175.5 L840 165.9 L848 159.0 L856 151.1 L864 153.6 L872 152.6 L880 158.8 L888 156.4 L896 160.2 L904 160.2 L912 158.6 L920 151.4 L928 152.4 L936 146.1 L944 137.7 L952 133.4 L960 129.4 L968 129.6 L976 130.7 L984 128.0 L992 128.2 L1000 137.9 L1008 145.0 L1016 156.4 L1024 162.1 L1032 170.2 L1040 176.6 L1048 176.7 L1056 182.0 L1064 185.3 L1072 182.6 L1080 180.9 L1088 182.6 L1096 178.3 L1104 171.2 L1112 168.3 L1120 166.1 L1128 164.0 L1136 171.6 L1144 174.8 L1152 174.9 L1160 177.4 L1168 183.9 L1176 184.1 L1184 179.6 L1192 178.9 L1200 176.6 L1208 171.2 L1216 162.1 L1224 159.4 L1232 149.6 L1240 141.9 L1248 134.2 L1256 125.7 L1264 126.2 L1272 130.4 L1280 128.2 L1288 132.8 L1296 140.3 L1304 145.9 L1312 150.3 L1320 154.4 L1328 157.0 L1336 161.5 L1344 158.9 L1352 160.7 L1360 158.0 L1368 158.3 L1376 157.8 L1384 151.0 L1392 155.8 L1400 164.3 L1408 169.6 L1416 175.9 L1424 180.0 L1432 187.1 L1440 185.7 L1440 240 L0 240 Z" fill="url(#gPunggung2)"/><use href="#pinus" x="-24.4" y="162.3" width="36.9" height="73.7" fill="#04100A"/><use href="#pinus" x="-11.2" y="145.0" width="45.5" height="91.0" fill="#04100A"/><use href="#pinus" x="44.5" y="144.2" width="45.9" height="91.8" fill="#04100A"/><use href="#pinus" x="63.2" y="182.3" width="26.8" height="53.7" fill="#04100A"/><use href="#pinus" x="84.4" y="182.6" width="26.7" height="53.4" fill="#04100A"/><use href="#pinus" x="105.7" y="158.9" width="38.6" height="77.1" fill="#04100A"/><use href="#pinus" x="144.1" y="153.0" width="41.5" height="83.0" fill="#04100A"/><use href="#pinus" x="191.3" y="175.2" width="30.4" height="60.8" fill="#04100A"/><use href="#pinus" x="199.4" y="175.3" width="30.4" height="60.7" fill="#04100A"/><use href="#pinus" x="219.4" y="160.9" width="37.5" height="75.1" fill="#04100A"/><use href="#pinus" x="259.0" y="184.7" width="25.6" height="51.3" fill="#04100A"/><use href="#pinus" x="307.5" y="171.0" width="32.5" height="65.0" fill="#04100A"/><use href="#pinus" x="331.3" y="145.1" width="45.4" height="90.9" fill="#04100A"/><use href="#pinus" x="358.6" y="179.9" width="28.0" height="56.1" fill="#04100A"/><use href="#pinus" x="369.3" y="180.1" width="28.0" height="55.9" fill="#04100A"/><use href="#pinus" x="414.4" y="167.4" width="34.3" height="68.6" fill="#04100A"/><use href="#pinus" x="433.6" y="191.0" width="22.5" height="45.0" fill="#04100A"/><use href="#pinus" x="459.2" y="173.1" width="31.4" height="62.9" fill="#04100A"/><use href="#pinus" x="479.6" y="179.9" width="28.0" height="56.1" fill="#04100A"/><use href="#pinus" x="513.5" y="172.0" width="32.0" height="64.0" fill="#04100A"/><use href="#pinus" x="546.7" y="164.9" width="35.6" height="71.1" fill="#04100A"/><use href="#pinus" x="590.3" y="177.8" width="29.1" height="58.2" fill="#04100A"/><use href="#pinus" x="592.7" y="177.4" width="29.3" height="58.6" fill="#04100A"/><use href="#pinus" x="621.9" y="164.4" width="35.8" height="71.6" fill="#04100A"/><use href="#pinus" x="662.0" y="176.5" width="29.7" height="59.5" fill="#04100A"/><use href="#pinus" x="672.1" y="156.1" width="40.0" height="79.9" fill="#04100A"/><use href="#pinus" x="719.9" y="162.1" width="36.9" height="73.9" fill="#04100A"/><use href="#pinus" x="748.0" y="151.1" width="42.4" height="84.9" fill="#04100A"/><use href="#pinus" x="761.5" y="182.8" width="26.6" height="53.2" fill="#04100A"/><use href="#pinus" x="798.5" y="158.4" width="38.8" height="77.6" fill="#04100A"/><use href="#pinus" x="830.1" y="167.8" width="34.1" height="68.2" fill="#04100A"/><use href="#pinus" x="854.8" y="180.2" width="27.9" height="55.8" fill="#04100A"/><use href="#pinus" x="893.5" y="145.0" width="45.5" height="91.0" fill="#04100A"/><use href="#pinus" x="915.1" y="169.5" width="33.2" height="66.5" fill="#04100A"/><use href="#pinus" x="929.2" y="163.2" width="36.4" height="72.8" fill="#04100A"/><use href="#pinus" x="959.9" y="162.0" width="37.0" height="74.0" fill="#04100A"/><use href="#pinus" x="992.3" y="169.6" width="33.2" height="66.4" fill="#04100A"/><use href="#pinus" x="1042.4" y="177.0" width="29.5" height="59.0" fill="#04100A"/><use href="#pinus" x="1059.3" y="176.6" width="29.7" height="59.4" fill="#04100A"/><use href="#pinus" x="1079.3" y="150.5" width="42.7" height="85.5" fill="#04100A"/><use href="#pinus" x="1106.6" y="145.9" width="45.1" height="90.1" fill="#04100A"/><use href="#pinus" x="1138.1" y="170.2" width="32.9" height="65.8" fill="#04100A"/><use href="#pinus" x="1173.8" y="167.9" width="34.0" height="68.1" fill="#04100A"/><use href="#pinus" x="1205.5" y="178.0" width="29.0" height="58.0" fill="#04100A"/><use href="#pinus" x="1209.7" y="171.7" width="32.2" height="64.3" fill="#04100A"/><use href="#pinus" x="1241.8" y="180.0" width="28.0" height="56.0" fill="#04100A"/><use href="#pinus" x="1282.9" y="158.9" width="38.5" height="77.1" fill="#04100A"/><use href="#pinus" x="1321.9" y="159.5" width="38.2" height="76.5" fill="#04100A"/><use href="#pinus" x="1342.0" y="175.4" width="30.3" height="60.6" fill="#04100A"/><use href="#pinus" x="1368.3" y="178.1" width="29.0" height="57.9" fill="#04100A"/><use href="#pinus" x="1380.8" y="166.3" width="34.8" height="69.7" fill="#04100A"/><use href="#pinus" x="1429.7" y="177.2" width="29.4" height="58.8" fill="#04100A"/><g class="kabut-g" style="animation-duration:26s"><ellipse cx="720" cy="196" rx="780" ry="22" fill="url(#gKabut)" fill-opacity="0.35"/></g></svg>
+            <div class="container">
+                <h2 class="sesu-judul sesu-reveal">Karya</h2>
+                <p class="sesu-sub-judul sesu-reveal">Hasil belajar yang bisa dilihat langsung.</p>
+                <div class="sesu-proyek-grid">
+                    <article class="sesu-kartu-proyek sesu-reveal">
+                        <div class="sesu-gambar"><span class="sesu-nomor">01</span>
+                        <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Tampilan Beranda website Pesona Nusa dengan latar gunung dan hutan pinus"><rect width="320" height="200" fill="url(#gSk1)"/><g class="matahari"><circle cx="232" cy="74" r="46" fill="url(#gSun)"/><circle cx="232" cy="74" r="11" fill="#F4FFB0"/></g><g class="lp1"><path d="M-20 115.7 L-16 109.9 L-12 98.3 L-8 84.4 L-4 74.5 L0 74.9 L4 75.1 L8 73.1 L12 84.3 L16 90.5 L20 95.9 L24 93.3 L28 92.8 L32 93.2 L36 91.8 L40 104.1 L44 115.8 L48 123.2 L52 129.4 L56 130.1 L60 123.5 L64 118.9 L68 108.2 L72 96.0 L76 97.6 L80 98.5 L84 99.7 L88 95.8 L92 92.9 L96 84.3 L100 74.4 L104 69.9 L108 69.9 L112 69.9 L116 80.9 L120 94.4 L124 106.4 L128 115.3 L132 122.1 L136 123.6 L140 120.8 L144 116.5 L148 104.8 L152 103.9 L156 108.4 L160 115.7 L164 114.6 L168 113.9 L172 113.7 L176 104.3 L180 89.1 L184 77.9 L188 59.9 L192 59.3 L196 70.5 L200 81.0 L204 91.3 L208 102.3 L212 108.2 L216 108.5 L220 103.7 L224 101.0 L228 98.9 L232 108.8 L236 118.8 L240 125.5 L244 124.8 L248 127.8 L252 121.6 L256 114.6 L260 105.4 L264 89.6 L268 83.7 L272 83.5 L276 87.5 L280 84.6 L284 81.9 L288 81.7 L292 82.0 L296 84.4 L300 86.3 L304 80.6 L308 91.1 L312 103.1 L316 111.5 L320 120.6 L324 128.1 L328 124.0 L332 125.4 L336 118.9 L340 107.1 L340 210 L-20 210 Z" fill="url(#gMa1)"/><path d="M184.0 77.9 L188.0 59.9 L192.0 59.3 L196.0 70.5 L200.0 81.0 L200.0 74.3 L197.3 70.3 L194.7 74.3 L192.0 70.3 L189.3 74.3 L186.7 70.3 L184.0 74.3Z" fill="#F1FFF6" fill-opacity="0.88"/><path d="M96.0 84.3 L100.0 74.4 L104.0 69.9 L108.0 69.9 L112.0 69.9 L116.0 80.9 L120.0 94.4 L120.0 84.9 L116.0 80.9 L112.0 84.9 L108.0 80.9 L104.0 84.9 L100.0 80.9 L96.0 84.9Z" fill="#F1FFF6" fill-opacity="0.88"/><path d="M-12.0 98.3 L-8.0 84.4 L-4.0 74.5 L0.0 74.9 L4.0 75.1 L8.0 73.1 L12.0 84.3 L16.0 90.5 L16.0 88.1 L11.3 84.1 L6.7 88.1 L2.0 84.1 L-2.7 88.1 L-7.3 84.1 L-12.0 88.1Z" fill="#F1FFF6" fill-opacity="0.88"/></g><g class="kabut-g" style="animation-duration:17s;animation-delay:-0s"><ellipse cx="160" cy="120" rx="210" ry="13" fill="url(#gKabut)" fill-opacity="0.55"/></g><g class="lp2"><path d="M-20 142.7 L-16 148.7 L-12 150.2 L-8 145.5 L-4 138.6 L0 125.6 L4 126.5 L8 126.4 L12 124.0 L16 118.7 L20 118.2 L24 120.7 L28 117.5 L32 126.7 L36 140.4 L40 145.5 L44 148.3 L48 146.3 L52 141.6 L56 129.7 L60 130.5 L64 133.5 L68 131.9 L72 125.6 L76 115.9 L80 110.8 L84 111.3 L88 123.3 L92 134.7 L96 142.0 L100 148.0 L104 147.6 L108 138.6 L112 130.2 L116 134.8 L120 138.6 L124 138.5 L128 133.2 L132 122.8 L136 109.1 L140 104.0 L144 116.1 L148 128.8 L152 140.5 L156 142.1 L160 143.3 L164 137.4 L168 132.1 L172 138.0 L176 143.4 L180 142.6 L184 138.1 L188 130.5 L192 117.1 L196 103.1 L200 110.3 L204 123.5 L208 132.6 L212 137.5 L216 139.2 L220 136.5 L224 132.0 L228 139.0 L232 145.0 L236 146.5 L240 141.9 L244 135.4 L248 123.5 L252 112.0 L256 112.8 L260 117.7 L264 125.2 L268 129.9 L272 134.5 L276 130.4 L280 128.7 L284 139.4 L288 148.4 L292 148.9 L296 147.4 L300 140.0 L304 129.2 L308 118.2 L312 118.1 L316 120.0 L320 119.5 L324 124.4 L328 127.7 L332 125.0 L336 126.1 L340 138.5 L340 210 L-20 210 Z" fill="url(#gMa2)"/><use href="#pinus" x="-16.2" y="126.3" width="11.9" height="23.7" fill="#0E3B28"/><use href="#pinus" x="11.6" y="131.9" width="9.0" height="18.1" fill="#0E3B28"/><use href="#pinus" x="28.0" y="129.4" width="10.3" height="20.6" fill="#0E3B28"/><use href="#pinus" x="54.0" y="124.6" width="12.7" height="25.4" fill="#0E3B28"/><use href="#pinus" x="83.5" y="126.9" width="11.6" height="23.1" fill="#0E3B28"/><use href="#pinus" x="106.1" y="126.2" width="11.9" height="23.8" fill="#0E3B28"/><use href="#pinus" x="126.5" y="128.7" width="10.7" height="21.3" fill="#0E3B28"/><use href="#pinus" x="149.7" y="123.5" width="13.2" height="26.5" fill="#0E3B28"/><use href="#pinus" x="173.1" y="124.5" width="12.8" height="25.5" fill="#0E3B28"/><use href="#pinus" x="197.9" y="125.9" width="12.0" height="24.1" fill="#0E3B28"/><use href="#pinus" x="225.8" y="129.0" width="10.5" height="21.0" fill="#0E3B28"/><use href="#pinus" x="256.7" y="133.3" width="8.4" height="16.7" fill="#0E3B28"/><use href="#pinus" x="270.0" y="123.4" width="13.3" height="26.6" fill="#0E3B28"/><use href="#pinus" x="301.4" y="132.5" width="8.8" height="17.5" fill="#0E3B28"/><use href="#pinus" x="328.6" y="123.1" width="13.5" height="26.9" fill="#0E3B28"/></g><g class="kabut-g" style="animation-duration:21s;animation-delay:-6s"><ellipse cx="160" cy="150" rx="210" ry="12" fill="url(#gKabut)" fill-opacity="0.5"/></g><g class="lp3"><rect x="-20" y="172" width="360" height="40" fill="#07170F"/><use href="#pinus" x="-27.5" y="135.1" width="24.4" height="48.9" fill="#07170F"/><use href="#pinus" x="9.1" y="130.8" width="26.6" height="53.2" fill="#07170F"/><use href="#pinus" x="30.5" y="147.1" width="18.4" height="36.9" fill="#07170F"/><use href="#pinus" x="58.1" y="147.3" width="18.4" height="36.7" fill="#07170F"/><use href="#pinus" x="99.9" y="149.8" width="17.1" height="34.2" fill="#07170F"/><use href="#pinus" x="123.2" y="147.6" width="18.2" height="36.4" fill="#07170F"/><use href="#pinus" x="144.9" y="141.8" width="21.1" height="42.2" fill="#07170F"/><use href="#pinus" x="184.0" y="137.1" width="23.4" height="46.9" fill="#07170F"/><use href="#pinus" x="196.5" y="145.9" width="19.0" height="38.1" fill="#07170F"/><use href="#pinus" x="223.8" y="130.2" width="26.9" height="53.8" fill="#07170F"/><use href="#pinus" x="267.1" y="131.9" width="26.0" height="52.1" fill="#07170F"/><use href="#pinus" x="296.2" y="133.5" width="25.2" height="50.5" fill="#07170F"/><use href="#pinus" x="326.9" y="132.2" width="25.9" height="51.8" fill="#07170F"/></g><rect x="22" y="34" width="276" height="148" rx="10" fill="#06120C" fill-opacity="0.38" stroke="#FFFFFF" stroke-opacity="0.35"/><path d="M22 44a10 10 0 0 1 10-10h256a10 10 0 0 1 10 10v8H22z" fill="#04100A" fill-opacity="0.8"/><circle cx="34" cy="43" r="3" fill="#00E05A"/><text x="41" y="45.5" font-size="6.6" font-weight="800" fill="#FFFFFF">Pesona Nusa</text><text x="128" y="45.5" font-size="5.8" font-weight="700" fill="#8CFFB0" fill-opacity="0.92">Beranda</text><text x="158" y="45.5" font-size="5.8" font-weight="700" fill="#FFFFFF" fill-opacity="0.92">Destinasi</text><text x="195" y="45.5" font-size="5.8" font-weight="700" fill="#FFFFFF" fill-opacity="0.92">Paket Wisata</text><text x="241" y="45.5" font-size="5.8" font-weight="700" fill="#FFFFFF" fill-opacity="0.92">Galeri</text><text x="268" y="45.5" font-size="5.8" font-weight="700" fill="#FFFFFF" fill-opacity="0.92">Kontak</text><text x="36" y="68" font-size="5.6" font-weight="800" letter-spacing="0.9" fill="#8CFFB0">WISATA SUMATERA UTARA</text><text x="36" y="84" font-size="12.5" font-weight="800" fill="#FFFFFF">Jelajahi Keindahan</text><text x="36" y="98" font-size="12.5" font-weight="800" fill="#8CFFB0">Nusantara <tspan fill="#FFFFFF">Bersama Kami</tspan></text><rect x="36" y="108" width="52" height="14" rx="7" fill="#00E05A"/><text x="45" y="117.6" font-size="6.6" font-weight="800" fill="#04140A">Lihat Paket</text><rect x="94" y="108" width="62" height="14" rx="7" fill="none" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="1"/><text x="102" y="117.6" font-size="6.6" font-weight="800" fill="#FFFFFF">Lihat Destinasi</text><rect x="34" y="146" width="80" height="26" rx="7" fill="#04100A" fill-opacity="0.66" stroke="#FFFFFF" stroke-opacity="0.22"/><text x="42" y="157" font-size="7.6" font-weight="800" fill="#FFFFFF">Danau Toba</text><text x="42" y="166.5" font-size="6" font-weight="600" fill="#8CFFB0">danau</text><rect x="122" y="146" width="80" height="26" rx="7" fill="#04100A" fill-opacity="0.66" stroke="#FFFFFF" stroke-opacity="0.22"/><text x="130" y="157" font-size="7.6" font-weight="800" fill="#FFFFFF">Bukit Lawang</text><text x="130" y="166.5" font-size="6" font-weight="600" fill="#8CFFB0">hutan</text><rect x="210" y="146" width="80" height="26" rx="7" fill="#04100A" fill-opacity="0.66" stroke="#FFFFFF" stroke-opacity="0.22"/><text x="218" y="157" font-size="7.6" font-weight="800" fill="#FFFFFF">Pulau Weh</text><text x="218" y="166.5" font-size="6" font-weight="600" fill="#8CFFB0">pantai</text></svg></div>
+                        <div class="sesu-info">
+                            <span class="sesu-label">Web</span>
+                            <h3>Website Pesona Nusa</h3>
+                            <p>Website biro wisata Sumatera Utara lima halaman: beranda, destinasi, paket wisata, galeri, dan kontak, dengan kalkulator biaya paket.</p>
+                            <div class="sesu-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+                        </div>
+                    </article>
+                    <article class="sesu-kartu-proyek sesu-reveal" style="--urut: 1">
+                        <div class="sesu-gambar"><span class="sesu-nomor">02</span>
+                        <img src="img/karya-figma.jpg" alt="Prototype Figma Pesona Nusa: tampilan Beranda, Destinasi, dan Paket Wisata" width="1400" height="875" loading="lazy"></div>
+                        <div class="sesu-info">
+                            <span class="sesu-label">Desain</span>
+                            <h3>Prototype Figma</h3>
+                            <p>Wireframe dan prototype interaktif lima layar dengan komponen, variabel warna, dan link antarhalaman.</p>
+                            <div class="sesu-tags"><span>Figma</span><span>Prototype</span></div>
+                        </div>
+                    </article>
+                    <article class="sesu-kartu-proyek sesu-reveal" style="--urut: 2">
+                        <div class="sesu-gambar"><span class="sesu-nomor">03</span>
+                        <img class="gambar-kampus" src="img/kampus.jpg" alt="Gedung kampus Universitas Mikroskil, tempat Portofolio Kelompok dibuat" width="1000" height="956" loading="lazy"></div>
+                        <div class="sesu-info">
+                            <span class="sesu-label">Web</span>
+                            <h3>Portofolio Kelompok</h3>
+                            <p>Portofolio lima halaman bersama tim dengan navbar dan footer yang seragam di semua halaman.</p>
+                            <div class="sesu-tags"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="sesu-bagian" id="perjalanan">
+            <div class="container">
+                <h2 class="sesu-judul sesu-reveal">Perjalanan</h2>
+                <p class="sesu-sub-judul sesu-reveal">Dari tag pertama sampai website lima halaman.</p>
+                <ul class="sesu-waktu">
+                    <li class="sesu-reveal"><span class="sesu-tahun">2026</span><h3>Tugas website lima halaman</h3><p>Membuat website responsif dengan Bootstrap, lengkap dengan prototype di Figma.</p></li>
+                    <li class="sesu-reveal"><span class="sesu-tahun">2025 - kini</span><h3>Teknik Informatika, Universitas Mikroskil</h3><p>Mempelajari pemrograman, pengembangan web, dan dasar-dasar rekayasa perangkat lunak.</p></li>
+                    <li class="sesu-reveal"><span class="sesu-tahun">2025</span><h3>Latihan mandiri HTML dan CSS</h3><p>Membuat proyek Web Kost sebagai latihan tag, tabel, daftar, dan formulir.</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sesu-cta">
+            <div class="container">
+                <h2 class="sesu-judul sesu-reveal">Ayo Berkenalan</h2>
+                <p class="sesu-sub-judul sesu-reveal">Lihat profil dan karya teman satu kelompok.</p>
+                <div class="sesu-anggota-grid">
+                    <a href="zega.html" class="sesu-anggota sesu-reveal"><img src="img/zega.svg" alt=""><b>Zega</b><span>Lihat profil</span></a>
+                    <a href="rendy.html" class="sesu-anggota sesu-reveal" style="--urut: 1"><img src="img/rendy.svg" alt=""><b>Rendy</b><span>Lihat profil</span></a>
+                    <a href="jeri.html" class="sesu-anggota sesu-reveal" style="--urut: 2"><img src="img/jeri.svg" alt=""><b>Jeri</b><span>Lihat profil</span></a>
+                </div>
+                <a href="index.html" class="sesu-btn sesu-btn-oranye sesu-reveal">Kembali ke Beranda</a>
+            </div>
+        </section>
+
+        <script>
+            var elemenReveal = document.querySelectorAll(".sesu-reveal");
+            var angkaHitung = document.querySelectorAll("[data-hitung]");
+
+            function hitungNaik(elemen) {
+                var target = parseInt(elemen.getAttribute("data-hitung"), 10);
+                var mulai = null;
+                function langkah(waktu) {
+                    if (mulai === null) {
+                        mulai = waktu;
+                    }
+                    var kemajuan = Math.min((waktu - mulai) / 900, 1);
+                    elemen.textContent = Math.round(target * kemajuan);
+                    if (kemajuan < 1) {
+                        requestAnimationFrame(langkah);
+                    }
+                }
+                elemen.textContent = "0";
+                requestAnimationFrame(langkah);
+            }
+
+            if ("IntersectionObserver" in window) {
+                var pengamat = new IntersectionObserver(function (daftar) {
+                    for (var i = 0; i < daftar.length; i++) {
+                        if (daftar[i].isIntersecting) {
+                            daftar[i].target.classList.add("tampil");
+                            var angka = daftar[i].target.querySelectorAll("[data-hitung]");
+                            for (var j = 0; j < angka.length; j++) {
+                                hitungNaik(angka[j]);
+                            }
+                            pengamat.unobserve(daftar[i].target);
+                        }
+                    }
+                }, { threshold: 0.1 });
+                for (var a = 0; a < elemenReveal.length; a++) {
+                    pengamat.observe(elemenReveal[a]);
+                }
+            } else {
+                for (var b = 0; b < elemenReveal.length; b++) {
+                    elemenReveal[b].classList.add("tampil");
+                }
+            }
+
+            var kataKetik = ["Web Front-End", "HTML dan CSS", "Bootstrap 5", "Desain di Figma"];
+            var teksKetik = document.getElementById("ketik");
+            var urutKata = 0;
+            var urutHuruf = kataKetik[0].length;
+            var menghapus = true;
+            var kurangGerak = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+            function ketik() {
+                var kata = kataKetik[urutKata];
+                var jeda = 90;
+                if (menghapus) {
+                    urutHuruf--;
+                    jeda = 45;
+                } else {
+                    urutHuruf++;
+                }
+                teksKetik.textContent = kata.substring(0, urutHuruf);
+                if (!menghapus && urutHuruf === kata.length) {
+                    menghapus = true;
+                    jeda = 1800;
+                } else if (menghapus && urutHuruf === 0) {
+                    menghapus = false;
+                    urutKata = (urutKata + 1) % kataKetik.length;
+                    jeda = 350;
+                }
+                setTimeout(ketik, jeda);
+            }
+            if (teksKetik && !kurangGerak) {
+                setTimeout(ketik, 3200);
+            }
+
+            var tautanMenu = document.querySelectorAll(".sesu-pil a");
+            function tandaiBagian() {
+                var aktif = null;
+                for (var i = 0; i < tautanMenu.length; i++) {
+                    var bagian = document.querySelector(tautanMenu[i].getAttribute("href"));
+                    if (bagian && bagian.getBoundingClientRect().top <= 180) {
+                        aktif = tautanMenu[i];
+                    }
+                    tautanMenu[i].classList.remove("aktif");
+                }
+                if (aktif) {
+                    aktif.classList.add("aktif");
+                }
+            }
+
+            var kataRaksasa = document.querySelectorAll(".sesu-kata");
+            function geserKata() {
+                var tinggiLayar = window.innerHeight;
+                for (var i = 0; i < kataRaksasa.length; i++) {
+                    var kotak = kataRaksasa[i].getBoundingClientRect();
+                    var kemajuan = (tinggiLayar - kotak.top) / (tinggiLayar + kotak.height);
+                    var arah = parseFloat(kataRaksasa[i].getAttribute("data-arah"));
+                    var jarak = (kemajuan - 0.5) * arah * window.innerWidth * 0.45;
+                    kataRaksasa[i].style.translate = jarak + "px 0";
+                }
+            }
+
+            var sedangGulir = false;
+            function saatGulir() {
+                if (!sedangGulir) {
+                    sedangGulir = true;
+                    requestAnimationFrame(function () {
+                        tandaiBagian();
+                        if (!kurangGerak) {
+                            geserKata();
+                        }
+                        sedangGulir = false;
+                    });
+                }
+            }
+            window.addEventListener("scroll", saatGulir, { passive: true });
+            window.addEventListener("resize", saatGulir);
+            tandaiBagian();
+            if (!kurangGerak) {
+                geserKata();
+            }
+
+            var punyaMouse = window.matchMedia("(hover: hover)").matches;
+            if (punyaMouse && !kurangGerak) {
+                var area = document.querySelector(".sesu");
+                var kursor = document.querySelector(".sesu-kursor");
+                var tujuanX = 0;
+                var tujuanY = 0;
+                var kursorX = 0;
+                var kursorY = 0;
+
+                area.addEventListener("mousemove", function (e) {
+                    tujuanX = e.clientX;
+                    tujuanY = e.clientY;
+                    kursor.classList.add("tampak");
+                    var sasaran = e.target.closest("a, button, .sesu-kartu-skill, .sesu-kartu-proyek, .sesu-anggota");
+                    kursor.classList.toggle("besar", sasaran !== null);
+                });
+                area.addEventListener("mouseleave", function () {
+                    kursor.classList.remove("tampak");
+                });
+                function ikutiKursor() {
+                    kursorX += (tujuanX - kursorX) * 0.18;
+                    kursorY += (tujuanY - kursorY) * 0.18;
+                    kursor.style.translate = kursorX + "px " + kursorY + "px";
+                    requestAnimationFrame(ikutiKursor);
+                }
+                ikutiKursor();
+
+                var fotoArea = document.getElementById("fotoArea");
+                var bingkai = document.getElementById("bingkai");
+                fotoArea.addEventListener("mousemove", function (e) {
+                    var kotak = fotoArea.getBoundingClientRect();
+                    var x = (e.clientX - kotak.left) / kotak.width - 0.5;
+                    var y = (e.clientY - kotak.top) / kotak.height - 0.5;
+                    bingkai.style.setProperty("--ry", (x * 12) + "deg");
+                    bingkai.style.setProperty("--rx", (-y * 10) + "deg");
+                });
+                fotoArea.addEventListener("mouseleave", function () {
+                    bingkai.style.setProperty("--ry", "0deg");
+                    bingkai.style.setProperty("--rx", "0deg");
+                });
+
+                var kartuSorot = document.querySelectorAll(".sesu-kartu-skill, .sesu-kartu-proyek, .sesu-anggota");
+                for (var k = 0; k < kartuSorot.length; k++) {
+                    kartuSorot[k].addEventListener("mousemove", function (e) {
+                        var kotak = this.getBoundingClientRect();
+                        this.style.setProperty("--mx", (e.clientX - kotak.left) + "px");
+                        this.style.setProperty("--my", (e.clientY - kotak.top) + "px");
+                    });
+                }
+            }
+        </script>
+
+        <script>
+            var kanvas = document.getElementById("latar");
+            if (kanvas && kanvas.getContext) {
+                var ctx = kanvas.getContext("2d");
+                var lebar = 0;
+                var tinggi = 0;
+                var dpr = 1;
+                var bintang = [];
+                var daunDaun = [];
+                var hujan = [];
+                var kabut = [];
+                var jalan = false;
+                var terakhir = 0;
+                var ponsel = window.innerWidth < 768;
+                var warnaDaun = ["#00E05A", "#2FD07C", "#B6FF4D", "#00A83C"];
+
+                function acak(a, b) {
+                    return a + Math.random() * (b - a);
+                }
+
+                function buatIsi() {
+                    var jumlahBintang = ponsel ? 70 : 140;
+                    var jumlahDaun = ponsel ? 12 : 26;
+                    var jumlahHujan = ponsel ? 70 : 150;
+                    bintang = [];
+                    daunDaun = [];
+                    hujan = [];
+                    kabut = [];
+                    var jumlahKabut = ponsel ? 6 : 10;
+                    for (var k = 0; k < jumlahKabut; k++) {
+                        kabut.push({
+                            x: acak(0, lebar), y: tinggi * acak(0.35, 1.05),
+                            rx: Math.max(lebar, 500) * acak(0.28, 0.5), ry: tinggi * acak(0.1, 0.2),
+                            kecepatan: acak(6, 16) * (k % 2 === 0 ? 1 : -1), alfa: acak(0.11, 0.2),
+                            fase: acak(0, 6.28), napas: acak(0.00008, 0.00016)
+                        });
+                    }
+                    for (var h = 0; h < jumlahHujan; h++) {
+                        var lapis = h % 5 === 0 ? 2 : (h % 5 < 3 ? 1 : 0);
+                        hujan.push({
+                            x: acak(-100, lebar + 100),
+                            y: acak(0, tinggi),
+                            lapis: lapis,
+                            panjang: [acak(8, 14), acak(13, 20), acak(19, 30)][lapis],
+                            kecepatan: [acak(520, 700), acak(760, 950), acak(1000, 1300)][lapis]
+                        });
+                    }
+                    for (var i = 0; i < jumlahBintang; i++) {
+                        bintang.push({ x: acak(0, lebar), y: acak(0, tinggi), r: acak(0.4, 1.5), fase: acak(0, 6.28), kec: acak(0.6, 2.2) });
+                    }
+                    for (var j = 0; j < jumlahDaun; j++) {
+                        daunDaun.push({
+                            x: acak(0, lebar), y: acak(-tinggi, tinggi), ukuran: acak(7, 17), fase: acak(0, 6.28),
+                            frek: acak(0.4, 1), goyang: acak(18, 50), rot: acak(0, 6.28), rotKec: acak(-1.2, 1.2),
+                            balik: acak(0, 6.28), balikKec: acak(0.8, 2.2), warna: warnaDaun[j % warnaDaun.length],
+                            alfa: acak(0.35, 0.85), kecepatan: 0
+                        });
+                        daunDaun[j].kecepatan = 14 + daunDaun[j].ukuran * 2.6;
+                    }
+                }
+
+                function ukur() {
+                    dpr = Math.min(window.devicePixelRatio || 1, 2);
+                    lebar = kanvas.clientWidth;
+                    tinggi = kanvas.clientHeight;
+                    kanvas.width = Math.round(lebar * dpr);
+                    kanvas.height = Math.round(tinggi * dpr);
+                    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                    ponsel = window.innerWidth < 768;
+                    buatIsi();
+                }
+
+                function gambarCahaya(t) {
+                    var pusat = [
+                        [lebar * (0.28 + 0.12 * Math.sin(t * 0.00009)), tinggi * (0.35 + 0.15 * Math.cos(t * 0.00007)), "rgba(0, 224, 90, 0.11)"],
+                        [lebar * (0.74 + 0.1 * Math.cos(t * 0.00008)), tinggi * (0.62 + 0.14 * Math.sin(t * 0.00006)), "rgba(80, 255, 130, 0.08)"]
+                    ];
+                    for (var i = 0; i < pusat.length; i++) {
+                        var radius = Math.max(lebar, tinggi) * 0.55;
+                        var gradasi = ctx.createRadialGradient(pusat[i][0], pusat[i][1], 0, pusat[i][0], pusat[i][1], radius);
+                        gradasi.addColorStop(0, pusat[i][2]);
+                        gradasi.addColorStop(1, "rgba(0, 224, 90, 0)");
+                        ctx.fillStyle = gradasi;
+                        ctx.fillRect(0, 0, lebar, tinggi);
+                    }
+                }
+
+                function gambarKabut(t) {
+                    for (var i = 0; i < kabut.length; i++) {
+                        var k = kabut[i];
+                        var alfa = k.alfa * (0.75 + 0.25 * Math.sin(t * k.napas + k.fase));
+                        ctx.save();
+                        ctx.translate(k.x, k.y + Math.sin(t * k.napas * 0.7 + k.fase) * 14);
+                        ctx.scale(1, k.ry / k.rx);
+                        var gradasi = ctx.createRadialGradient(0, 0, 0, 0, 0, k.rx);
+                        gradasi.addColorStop(0, "rgba(214, 255, 230, " + alfa + ")");
+                        gradasi.addColorStop(0.55, "rgba(150, 240, 190, " + (alfa * 0.45) + ")");
+                        gradasi.addColorStop(1, "rgba(150, 240, 190, 0)");
+                        ctx.fillStyle = gradasi;
+                        ctx.fillRect(-k.rx, -k.rx, k.rx * 2, k.rx * 2);
+                        ctx.restore();
+                    }
+                    var dasar = ctx.createLinearGradient(0, tinggi * 0.55, 0, tinggi);
+                    dasar.addColorStop(0, "rgba(190, 255, 215, 0)");
+                    dasar.addColorStop(1, "rgba(190, 255, 215, 0.2)");
+                    ctx.fillStyle = dasar;
+                    ctx.fillRect(0, tinggi * 0.55, lebar, tinggi * 0.45);
+                }
+
+                function perbaruiKabut(dt) {
+                    for (var i = 0; i < kabut.length; i++) {
+                        var k = kabut[i];
+                        k.x += k.kecepatan * dt;
+                        if (k.x > lebar + k.rx) {
+                            k.x = -k.rx;
+                        } else if (k.x < -k.rx) {
+                            k.x = lebar + k.rx;
+                        }
+                    }
+                }
+
+                function gambarBintang(t) {
+                    for (var i = 0; i < bintang.length; i++) {
+                        var b = bintang[i];
+                        var terang = 0.25 + 0.6 * (0.5 + 0.5 * Math.sin(t * 0.001 * b.kec + b.fase));
+                        ctx.fillStyle = "rgba(215, 255, 232, " + terang + ")";
+                        ctx.beginPath();
+                        ctx.arc(b.x, b.y, b.r, 0, 6.2832);
+                        ctx.fill();
+                    }
+                }
+
+                function gambarDaun(d) {
+                    var s = d.ukuran;
+                    ctx.save();
+                    ctx.translate(d.x + Math.sin(d.fase) * d.goyang, d.y);
+                    ctx.rotate(d.rot);
+                    ctx.scale(Math.cos(d.balik) * 0.8 + 0.2 * Math.sign(Math.cos(d.balik) || 1), 1);
+                    ctx.globalAlpha = d.alfa;
+                    ctx.fillStyle = d.warna;
+                    ctx.beginPath();
+                    ctx.moveTo(0, -s);
+                    ctx.bezierCurveTo(s * 0.8, -s * 0.4, s * 0.8, s * 0.5, 0, s);
+                    ctx.bezierCurveTo(-s * 0.8, s * 0.5, -s * 0.8, -s * 0.4, 0, -s);
+                    ctx.fill();
+                    ctx.strokeStyle = "rgba(0, 60, 25, 0.7)";
+                    ctx.lineWidth = 0.9;
+                    ctx.beginPath();
+                    ctx.moveTo(0, -s * 0.8);
+                    ctx.lineTo(0, s * 0.85);
+                    ctx.stroke();
+                    ctx.restore();
+                }
+
+                function perbaruiDaun(dt) {
+                    for (var i = 0; i < daunDaun.length; i++) {
+                        var d = daunDaun[i];
+                        d.y += d.kecepatan * dt;
+                        d.fase += d.frek * dt;
+                        d.rot += d.rotKec * dt;
+                        d.balik += d.balikKec * dt;
+                        if (d.y > tinggi + 30) {
+                            d.y = -30;
+                            d.x = acak(0, lebar);
+                        }
+                    }
+                }
+
+                var gayaHujan = [
+                    { warna: "rgba(190, 255, 215, 0.16)", tebal: 0.8 },
+                    { warna: "rgba(190, 255, 215, 0.26)", tebal: 1 },
+                    { warna: "rgba(220, 255, 235, 0.4)", tebal: 1.4 }
+                ];
+                var miringHujan = 0.16;
+
+                function perbaruiHujan(dt) {
+                    for (var i = 0; i < hujan.length; i++) {
+                        var t = hujan[i];
+                        t.y += t.kecepatan * dt;
+                        t.x += t.kecepatan * miringHujan * dt;
+                        if (t.y - t.panjang > tinggi) {
+                            t.y = -t.panjang;
+                            t.x = acak(-100, lebar + 100);
+                        }
+                    }
+                }
+
+                function gambarHujan() {
+                    ctx.lineCap = "round";
+                    for (var lapis = 0; lapis < 3; lapis++) {
+                        ctx.strokeStyle = gayaHujan[lapis].warna;
+                        ctx.lineWidth = gayaHujan[lapis].tebal;
+                        ctx.beginPath();
+                        for (var i = 0; i < hujan.length; i++) {
+                            var t = hujan[i];
+                            if (t.lapis === lapis) {
+                                ctx.moveTo(t.x, t.y);
+                                ctx.lineTo(t.x - t.panjang * miringHujan, t.y - t.panjang);
+                            }
+                        }
+                        ctx.stroke();
+                    }
+                }
+
+                function gambar(waktu) {
+                    if (!jalan) {
+                        return;
+                    }
+                    var dt = Math.min((waktu - terakhir) / 1000, 0.05);
+                    terakhir = waktu;
+                    ctx.clearRect(0, 0, lebar, tinggi);
+                    gambarCahaya(waktu);
+                    perbaruiKabut(dt);
+                    gambarKabut(waktu);
+                    gambarBintang(waktu);
+                    perbaruiHujan(dt);
+                    gambarHujan();
+                    perbaruiDaun(dt);
+                    for (var i = 0; i < daunDaun.length; i++) {
+                        gambarDaun(daunDaun[i]);
+                    }
+                    ctx.globalAlpha = 1;
+                    requestAnimationFrame(gambar);
+                }
+
+                function mulaiGambar() {
+                    if (!jalan && !document.hidden) {
+                        jalan = true;
+                        terakhir = performance.now();
+                        requestAnimationFrame(gambar);
+                    }
+                }
+
+                ukur();
+                var tundaUkur = null;
+                window.addEventListener("resize", function () {
+                    clearTimeout(tundaUkur);
+                    tundaUkur = setTimeout(ukur, 200);
+                });
+                document.addEventListener("visibilitychange", function () {
+                    if (document.hidden) {
+                        jalan = false;
+                    } else {
+                        mulaiGambar();
+                    }
+                });
+
+                if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                    gambarCahaya(0);
+                    gambarKabut(0);
+                    gambarBintang(0);
+                } else {
+                    mulaiGambar();
+                }
+            }
+        </script>
+        </div>
+    </main>
+    <!-- ===== AKHIR ISI HALAMAN ===== -->
+
+    <!-- ===== FOOTER: sama di semua halaman, JANGAN DIUBAH ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logo Portofolio Teknik Informatika" width="200" height="40"></a>
+                    <p>Portofolio kelompok mahasiswa Teknik Informatika Universitas Mikroskil. Berisi profil kampus, jurusan, dan karya tiap anggota.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4>Navigasi</h4>
+                    <a href="index.html">Beranda</a>
+                    <a href="sesu.html">Sesu</a>
+                    <a href="zega.html">Zega</a>
+                    <a href="rendy.html">Rendy</a>
+                    <a href="jeri.html">Jeri</a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4>Informasi Portofolio</h4>
+                    <ul class="info-footer">
+                        <li><b>Mata kuliah</b>Pengembangan Web Front-End</li>
+                        <li><b>Teknologi</b>HTML5, CSS3, Bootstrap 5, JavaScript</li>
+                        <li><b>Tahun</b>2026</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Kontak</h4>
+                    <p>Universitas Mikroskil<br>Jl. Thamrin, Medan<br>Sumatera Utara</p>
+                    <p>kelompok@email.com</p>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+            <div class="hak-cipta">&copy; 2026 Portofolio Kelompok: Sesuaikan, Zega, Rendy, dan Jeri. Dibuat untuk tugas Pengembangan Web Front-End.</div>
+        </div>
+    </footer>
+    <!-- ===== AKHIR FOOTER ===== -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
