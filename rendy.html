@@ -1,137 +1,634 @@
+
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rendy - Portofolio Kelompok</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rendy Samuel | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue: #168cff;
+    --light-blue: #54b5ff;
+    --background: #080b14;
+    --card: #111a2a;
+    --text: #f5f7ff;
+    --muted: #a6b0c0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 85%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* NAVBAR */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8, 11, 20, 0.95);
+    border-bottom: 1px solid #1d3555;
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--muted);
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+/* HERO */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text small {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero-text h1 span {
+    color: var(--blue);
+}
+
+.hero-text h2 {
+    color: var(--light-blue);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 330px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 3px solid var(--blue);
+    box-shadow: 0 0 35px #168cff55;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--blue);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0066cc;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--blue);
+    margin-left: 10px;
+}
+
+/* GENERAL SECTION */
+section {
+    padding: 85px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 span {
+    color: var(--blue);
+}
+
+.section-title p {
+    color: var(--muted);
+}
+
+/* ABOUT */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.about-card,
+.info-card {
+    background: var(--card);
+    border: 1px solid #1d3555;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.about-card h3 {
+    color: var(--light-blue);
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: var(--muted);
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #26364c;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-item span:first-child {
+    color: var(--muted);
+}
+
+/* TECHNOLOGIES */
+.technologies {
+    background: #0b1120;
+}
+
+.tech-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tech-card {
+    background: var(--card);
+    border: 1px solid #1d3555;
+    border-radius: 15px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tech-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--blue);
+    box-shadow: 0 5px 25px #168cff33;
+}
+
+.tech-card img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.tech-card h3 {
+    color: var(--light-blue);
+    margin-bottom: 8px;
+}
+
+.tech-card p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* PROJECTS */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: var(--card);
+    border: 1px solid #1d3555;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--blue);
+}
+
+.project-card .number {
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* CONTACT */
+.contact-box {
+    background: var(--card);
+    border: 1px solid #1d3555;
+    border-radius: 15px;
+    padding: 45px 25px;
+    text-align: center;
+}
+
+.contact-box h2 {
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #1d3555;
+    color: var(--muted);
+}
+
+footer span {
+    color: var(--blue);
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .hero-content,
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .tech-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 13px;
+    }
+
+    .hero-image img {
+        width: 260px;
+        height: 300px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .tech-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-item {
+        font-size: 13px;
+    }
+}
+</style>
 </head>
 
 <body>
-    <!-- ===== NAVBAR: sama di semua halaman, JANGAN DIUBAH ===== -->
-    <header>
-        <nav class="navbar navbar-expand-lg sticky-top">
-            <div class="container">
-                <a href="index.html" class="navbar-brand logo"><img src="img/logo.svg" alt="Logo Portofolio Teknik Informatika" width="200" height="40"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama" aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menuUtama">
-                    <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sesuaikan.html">Sesuaikan</a></li>
-                        <li class="nav-item"><a class="nav-link" href="zega.html">Zega</a></li>
-                        <li class="nav-item"><a class="nav-link" href="rendy.html">Rendy</a></li>
-                        <li class="nav-item"><a class="nav-link" href="jeri.html">Jeri</a></li>
-                    </ul>
-                    <!-- <a href="login.html" class="btn btn-utama btn-sm px-4">Login</a> -->
-                </div>
-            </div>
+
+<!-- NAVBAR -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">RENDY.</div>
+
+            <ul class="nav-links">
+                <li><a href="/">Beranda</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-    </header>
-    <!-- ===== AKHIR NAVBAR ===== -->
+    </div>
+</header>
 
-    <!-- ===== ISI HALAMAN: UBAH DI SINI SAJA ===== -->
-    <main>
-        <section class="judul-halaman">
-            <div class="container">
-                <h1>Profil Rendy</h1>
-                <p>Halaman pribadi anggota kelompok portofolio.</p>
-            </div>
-        </section>
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
 
-        <section class="bagian">
-            <div class="container">
-                <div class="row g-4 g-lg-5">
-                    <div class="col-lg-4">
-                        <div class="profil">
-                            <img src="img/rendy.svg" alt="Foto Rendy">
-                            <ul class="data-diri">
-                                <li><span>Nama</span><b>Rendy</b></li>
-                                <li><span>Program studi</span><b>Teknik Informatika</b></li>
-                                <li><span>Kampus</span><b>Universitas Mikroskil</b></li>
-                                <li><span>Kelompok</span><b>Portofolio Kelompok</b></li>
-                                <li><span>Fokus</span><b>Web Front-End</b></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <h2 class="mb-3">Tentang Saya</h2>
-                        <p>Mahasiswa Teknik Informatika Universitas Mikroskil yang sedang belajar pengembangan web front-end. Di halaman ini saya menampilkan profil singkat, hal yang sedang saya pelajari, dan proyek yang saya kerjakan.</p>
-                        <p>Saya suka memahami alur sebuah program sebelum menulisnya, supaya hasilnya rapi dan bisa saya jelaskan dengan baik.</p>
-                        <h3 class="h5 mt-4 mb-3">Yang Sedang Saya Pelajari</h3>
-                        <div class="d-flex flex-wrap gap-2 mb-4"><span class="chip ">HTML5</span><span class="chip ">CSS3</span><span class="chip ">Bootstrap 5</span><span class="chip ">JavaScript dasar</span><span class="chip ">Figma</span></div>
-                        <h3 class="h5 mb-3">Anggota Lainnya</h3>
-                        <div class="d-flex flex-wrap gap-2"><a href="sesuaikan.html" class="btn btn-garis btn-sm">Sesuaikan</a><a href="zega.html" class="btn btn-garis btn-sm">Zega</a><a href="jeri.html" class="btn btn-garis btn-sm">Jeri</a><a href="index.html#anggota" class="btn btn-utama btn-sm">Semua Anggota</a></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <div class="hero-text">
+                <small>SELAMAT DATANG DI PORTFOLIO SAYA</small>
 
-        <section class="bagian bg-lembut">
-            <div class="container">
-                <div class="judul-bagian">
-                    <h2>Proyek Rendy</h2>
-                    <p>Karya yang dikerjakan selama perkuliahan.</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <article class="kartu h-100">
-                            <img src="img/proyek-porto.svg" class="img-fluid" alt="Website Portofolio Kelompok">
-                            <div class="kartu-isi">
-                                <span class="lencana">Web</span>
-                                <h3>Website Portofolio Kelompok</h3>
-                                <p>Website lima halaman dengan Bootstrap yang berisi profil kampus, jurusan, dan anggota kelompok.</p>
-                                <div><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Bootstrap</span></div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- ===== AKHIR ISI HALAMAN ===== -->
+                <h1>
+                    Halo, Saya <span>Rendy.</span>
+                </h1>
 
-    <!-- ===== FOOTER: sama di semua halaman, JANGAN DIUBAH ===== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logo Portofolio Teknik Informatika" width="200" height="40"></a>
-                    <p>Portofolio kelompok mahasiswa Teknik Informatika Universitas Mikroskil. Berisi profil kampus, jurusan, dan karya tiap anggota.</p>
-                </div>
-                <div class="col-6 col-lg-2">
-                    <h4>Navigasi</h4>
-                    <a href="index.html">Beranda</a>
-                    <a href="sesuaikan.html">Sesuaikan</a>
-                    <a href="zega.html">Zega</a>
-                    <a href="rendy.html">Rendy</a>
-                    <a href="jeri.html">Jeri</a>
-                </div>
-                <div class="col-6 col-lg-3">
-                    <h4>Informasi Portofolio</h4>
-                    <ul class="info-footer">
-                        <li><b>Mata kuliah</b>Pengembangan Web Front-End</li>
-                        <li><b>Teknologi</b>HTML5, CSS3, Bootstrap 5, JavaScript</li>
-                        <li><b>Tahun</b>2026</li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h4>Kontak</h4>
-                    <p>Universitas Mikroskil<br>Jl. Thamrin, Medan<br>Sumatera Utara</p>
-                    <p>kelompok@email.com</p>
-                    <a href="login.html">Login</a>
-                </div>
+                <h2>Informatics Student & Aspiring Developer</h2>
+
+                <p>
+                    Saya adalah mahasiswa Informatika Universitas Mikroskil
+                    yang memiliki ketertarikan dalam dunia teknologi,
+                    pemrograman, dan pengembangan website.
+                    Saya senang mempelajari hal baru dan mengembangkan
+                    kemampuan di bidang teknologi.
+                </p>
+
+                <a href="#about" class="btn">Kenali Saya</a>
+                <a href="#projects" class="btn btn-outline">Lihat Project</a>
             </div>
-            <div class="hak-cipta">&copy; 2026 Portofolio Kelompok: Sesuaikan, Zega, Rendy, dan Jeri. Dibuat untuk tugas Pengembangan Web Front-End.</div>
+
+            <div class="hero-image">
+                <img src="rendy.jpeg" alt="Foto Rendy">
+            </div>
+
         </div>
-    </footer>
-    <!-- ===== AKHIR FOOTER ===== -->
+    </div>
+</section>
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>About <span>Me</span></h2>
+            <p>Mengenal lebih dekat tentang saya.</p>
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-card">
+                <h3>Perkenalan</h3>
+                <p>
+                    Halo! Nama saya Rendy Samuel Siringoringo.
+                    Saya merupakan mahasiswa Informatika di
+                    Universitas Mikroskil, Medan.
+                    Saya tertarik mempelajari web development,
+                    programming, dan teknologi digital.
+                    Bagi saya, setiap proses belajar merupakan
+                    kesempatan untuk berkembang dan menciptakan
+                    sesuatu yang bermanfaat.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-item">
+                    <span>Nama</span>
+                    <span>Rendy Samuel</span>
+                </div>
+
+                <div class="info-item">
+                    <span>Status</span>
+                    <span>Mahasiswa</span>
+                </div>
+
+                <div class="info-item">
+                    <span>Universitas</span>
+                    <span>Mikroskil</span>
+                </div>
+
+                <div class="info-item">
+                    <span>Bidang</span>
+                    <span>Informatika</span>
+                </div>
+
+                <div class="info-item">
+                    <span>Minat</span>
+                    <span>Web Development</span>
+                </div>
+
+                <div class="info-item">
+                    <span>Hobi</span>
+                    <span>Gaming & Technology</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TECHNOLOGIES -->
+<section id="technologies" class="technologies">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Teknologi yang <span>Saya Pelajari</span></h2>
+            <p>Beberapa teknologi dan tools yang saya pelajari dalam dunia programming.</p>
+        </div>
+
+        <div class="tech-container">
+
+            <div class="tech-card">
+                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML Logo">
+                <h3>HTML</h3>
+                <p>Mempelajari struktur halaman website.</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS Logo">
+                <h3>CSS</h3>
+                <p>Mempelajari desain dan tampilan website.</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript Logo">
+                <h3>JavaScript</h3>
+                <p>Mempelajari interaksi dan logika website.</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap Logo">
+                <h3>Bootstrap</h3>
+                <p>Mempelajari framework desain responsif.</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python Logo">
+                <h3>Python</h3>
+                <p>Mempelajari dasar pemrograman dan pengolahan data.</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.simpleicons.org/flutter/02569B" alt="Flutter Logo">
+                <h3>Flutter</h3>
+                <p>Mempelajari pengembangan aplikasi mobile.</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL Logo">
+                <h3>Database</h3>
+                <p>Mempelajari penyimpanan dan pengelolaan data.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>My <span>Projects</span></h2>
+            <p>Beberapa proyek dan latihan yang saya kerjakan.</p>
+        </div>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <div class="number">01</div>
+                <h3>Website Portfolio</h3>
+                <p>
+                    Proyek pembuatan website portfolio pribadi
+                    menggunakan HTML dan CSS.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <div class="number">02</div>
+                <h3>Programming Project</h3>
+                <p>
+                    Latihan membuat program menggunakan
+                    bahasa pemrograman Python.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <div class="number">03</div>
+                <h3>Database Project</h3>
+                <p>
+                    Latihan membuat dan mengelola database
+                    menggunakan MySQL.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+
+        <div class="contact-box">
+            <h2>Let's <span style="color:#168cff;">Connect!</span></h2>
+
+            <p>
+                Terima kasih sudah mengunjungi portfolio saya.
+                Mari terus belajar, berkembang, dan menciptakan
+                sesuatu yang bermanfaat melalui teknologi.
+            </p>
+
+            <a href="#home" class="btn">Kembali ke Atas</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>
+        © 2026 <span>Rendy Samuel Siringoringo.</span>
+        All Rights Reserved.
+    </p>
+</footer>
+
 </body>
-
 </html>
