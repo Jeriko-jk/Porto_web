@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zega - Portofolio Kelompok</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== NAVBAR: sama di semua halaman, JANGAN DIUBAH ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand logo"><img src="img/logo.svg" alt="Logo Portofolio Teknik Informatika" width="200" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama" aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuUtama">
+                    <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sesuaikan.html">Sesuaikan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="zega.html">Zega</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rendy.html">Rendy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="jeri.html">Jeri</a></li>
+                    </ul>
+                    <!-- <a href="login.html" class="btn btn-utama btn-sm px-4">Login</a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ===== AKHIR NAVBAR ===== -->
+
+    <!-- ===== ISI HALAMAN: UBAH DI SINI SAJA ===== -->
+    <main>
+        <section class="judul-halaman">
+            <div class="container">
+                <h1>Profil Zega</h1>
+                <p>Halaman pribadi anggota kelompok portofolio.</p>
+            </div>
+        </section>
+
+        <section class="bagian">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4">
+                        <div class="profil">
+                            <img src="img/zega.svg" alt="Foto Zega">
+                            <ul class="data-diri">
+                                <li><span>Nama</span><b>Zega</b></li>
+                                <li><span>Program studi</span><b>Teknik Informatika</b></li>
+                                <li><span>Kampus</span><b>Universitas Mikroskil</b></li>
+                                <li><span>Kelompok</span><b>Portofolio Kelompok</b></li>
+                                <li><span>Fokus</span><b>Web Front-End</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h2 class="mb-3">Tentang Saya</h2>
+                        <p>Mahasiswa Teknik Informatika Universitas Mikroskil yang sedang belajar pengembangan web front-end. Di halaman ini saya menampilkan profil singkat, hal yang sedang saya pelajari, dan proyek yang saya kerjakan.</p>
+                        <p>Saya suka memahami alur sebuah program sebelum menulisnya, supaya hasilnya rapi dan bisa saya jelaskan dengan baik.</p>
+                        <h3 class="h5 mt-4 mb-3">Yang Sedang Saya Pelajari</h3>
+                        <div class="d-flex flex-wrap gap-2 mb-4"><span class="chip ">HTML5</span><span class="chip ">CSS3</span><span class="chip ">Bootstrap 5</span><span class="chip ">JavaScript dasar</span><span class="chip ">Figma</span></div>
+                        <h3 class="h5 mb-3">Anggota Lainnya</h3>
+                        <div class="d-flex flex-wrap gap-2"><a href="sesuaikan.html" class="btn btn-garis btn-sm">Sesuaikan</a><a href="rendy.html" class="btn btn-garis btn-sm">Rendy</a><a href="jeri.html" class="btn btn-garis btn-sm">Jeri</a><a href="index.html#anggota" class="btn btn-utama btn-sm">Semua Anggota</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bagian bg-lembut">
+            <div class="container">
+                <div class="judul-bagian">
+                    <h2>Proyek Zega</h2>
+                    <p>Karya yang dikerjakan selama perkuliahan.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="kartu h-100">
+                            <img src="img/proyek-porto.svg" class="img-fluid" alt="Website Portofolio Kelompok">
+                            <div class="kartu-isi">
+                                <span class="lencana">Web</span>
+                                <h3>Website Portofolio Kelompok</h3>
+                                <p>Website lima halaman dengan Bootstrap yang berisi profil kampus, jurusan, dan anggota kelompok.</p>
+                                <div><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Bootstrap</span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ===== AKHIR ISI HALAMAN ===== -->
+
+    <!-- ===== FOOTER: sama di semua halaman, JANGAN DIUBAH ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logo Portofolio Teknik Informatika" width="200" height="40"></a>
+                    <p>Portofolio kelompok mahasiswa Teknik Informatika Universitas Mikroskil. Berisi profil kampus, jurusan, dan karya tiap anggota.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4>Navigasi</h4>
+                    <a href="index.html">Beranda</a>
+                    <a href="sesuaikan.html">Sesuaikan</a>
+                    <a href="zega.html">Zega</a>
+                    <a href="rendy.html">Rendy</a>
+                    <a href="jeri.html">Jeri</a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4>Informasi Portofolio</h4>
+                    <ul class="info-footer">
+                        <li><b>Mata kuliah</b>Pengembangan Web Front-End</li>
+                        <li><b>Teknologi</b>HTML5, CSS3, Bootstrap 5, JavaScript</li>
+                        <li><b>Tahun</b>2026</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Kontak</h4>
+                    <p>Universitas Mikroskil<br>Jl. Thamrin, Medan<br>Sumatera Utara</p>
+                    <p>kelompok@email.com</p>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+            <div class="hak-cipta">&copy; 2026 Portofolio Kelompok: Sesuaikan, Zega, Rendy, dan Jeri. Dibuat untuk tugas Pengembangan Web Front-End.</div>
+        </div>
+    </footer>
+    <!-- ===== AKHIR FOOTER ===== -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

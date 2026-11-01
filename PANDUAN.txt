@@ -1,0 +1,21 @@
+PANDUAN SINGKAT - Portofolio Kelompok
+
+Cara buka: ekstrak folder, lalu buka index.html di browser (tanpa internet pun bisa).
+
+Pembagian file:
+- index.html      : Beranda (kampus, jurusan, kartu anggota)
+- sesuaikan.html  : halaman Sesuaikan
+- zega.html       : halaman Zega
+- rendy.html      : halaman Rendy
+- jeri.html       : halaman Jeri
+- login.html      : halaman Login (simulasi, tombol Login di navbar)
+
+Aturan kerja tim:
+1. Tiap orang hanya mengubah isi di antara
+   <!-- ===== ISI HALAMAN: UBAH DI SINI SAJA ===== -->  dan  <!-- ===== AKHIR ISI HALAMAN ===== -->
+   pada file masing-masing.
+2. Blok NAVBAR dan FOOTER sama persis di semua file. Jangan diubah.
+   Menu aktif ditandai otomatis oleh script.js.
+3. style.css bagian "TEMPLATE UTAMA" jangan diubah. Style tambahan taruh di bawah "STYLE ISI HALAMAN".
+4. Ganti foto: timpa file di folder img/ dengan nama sama (foto.svg, zega.svg, rendy.svg, jeri.svg),
+   atau ganti nilai src pada tag <img> di halaman masing-masing.

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Portofolio Kelompok</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== NAVBAR: sama di semua halaman, JANGAN DIUBAH ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand logo"><img src="img/logo.svg" alt="Logo Portofolio Teknik Informatika" width="200" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama" aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuUtama">
+                    <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sesuaikan.html">Sesuaikan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="zega.html">Zega</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rendy.html">Rendy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="jeri.html">Jeri</a></li>
+                    </ul>
+                    <!-- <a href="login.html" class="btn btn-utama btn-sm px-4">Login</a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ===== AKHIR NAVBAR ===== -->
+
+    <!-- ===== ISI HALAMAN: UBAH DI SINI SAJA ===== -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <span class="label">Universitas Mikroskil, Medan</span>
+                        <h1>Portofolio <span class="text-aksen">Kelompok</span> Teknik Informatika</h1>
+                        <p>Kenali kampus dan jurusan kami, lalu lihat profil serta karya dari empat anggota kelompok.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="#kampus" class="btn btn-utama">Tentang Kampus</a>
+                            <a href="#anggota" class="btn btn-garis">Lihat Anggota</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 hero-gambar">
+                        <img src="img/kampus.svg" alt="Ilustrasi gedung kampus">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bagian" id="kampus">
+            <div class="container">
+                <div class="judul-bagian">
+                    <h2>Tentang Universitas Mikroskil</h2>
+                    <p>Perguruan tinggi swasta di Medan yang berfokus pada bidang informatika.</p>
+                </div>
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-7">
+                        <p>Universitas Mikroskil berada di Medan, Sumatera Utara, dan dikelola oleh Yayasan Bina Pertiwi. Perjalanannya dimulai dari lembaga kursus komputer, berkembang menjadi sekolah tinggi, lalu resmi menjadi universitas pada 2021 setelah STMIK Mikroskil dan STIE Mikroskil bergabung.</p>
+                        <p>Kampusnya berlokasi di Jalan Thamrin dan terdiri dari Kampus A, B, dan C. Slogan yang dipakai adalah <b>Leading in Informatics</b>.</p>
+                        <h3 class="h5 mt-4 mb-3">Perjalanan Singkat</h3>
+                        <ul class="timeline">
+                            <li><span class="waktu">1992</span><h3>Kursus komputer IMC</h3><p>Yayasan Bina Pertiwi Medan mendirikan lembaga kursus komputer IMC.</p></li>
+                            <li><span class="waktu">1994</span><h3>Menjadi Microskills (D-1)</h3><p>IMC ditingkatkan menjadi program Diploma 1 bernama Microskills.</p></li>
+                            <li><span class="waktu">1997</span><h3>STMIK Mikroskil</h3><p>Resmi menjadi sekolah tinggi dengan nama STMIK Mikroskil.</p></li>
+                            <li><span class="waktu">2008</span><h3>STIE Mikroskil</h3><p>Yayasan mendirikan STIE Mikroskil di bidang ekonomi.</p></li>
+                            <li><span class="waktu">2021</span><h3>Universitas Mikroskil</h3><p>STMIK dan STIE Mikroskil bergabung menjadi Universitas Mikroskil.</p></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="profil">
+                            <h3 class="h5 mb-3">Data Singkat</h3>
+                            <ul class="data-diri">
+                                <li><span>Lokasi</span><b>Medan, Sumatera Utara</b></li>
+                                <li><span>Kampus</span><b>Jl. Thamrin (A, B, C)</b></li>
+                                <li><span>Menjadi universitas</span><b>2021</b></li>
+                                <li><span>Akar institusi</span><b>STMIK, 1997</b></li>
+                                <li><span>Slogan</span><b>Leading in Informatics</b></li>
+                                <li><span>Jumlah fakultas</span><b>2</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6">
+                        <div class="fokus h-100">
+                            <span class="lencana">Fakultas</span>
+                            <h3 class="mt-2">Fakultas Informatika</h3>
+                            <ul class="daftar-prodi">
+                                <li>Teknik Informatika (S1)</li>
+                                <li>Sistem Informasi (S1)</li>
+                                <li>Teknologi Informasi (S1)</li>
+                                <li>Magister Teknologi Informasi (S2)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fokus h-100">
+                            <span class="lencana">Fakultas</span>
+                            <h3 class="mt-2">Fakultas Bisnis dan Hukum</h3>
+                            <ul class="daftar-prodi">
+                                <li>Manajemen (S1)</li>
+                                <li>Akuntansi (S1)</li>
+                                <li>Hukum Bisnis (S1)</li>
+                                <li>Magister Manajemen (S2)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bagian bg-lembut" id="jurusan">
+            <div class="container">
+                <div class="judul-bagian">
+                    <h2>Tentang Teknik Informatika</h2>
+                    <p>Program studi S1 di Fakultas Informatika dengan gelar S.Kom.</p>
+                </div>
+                <div class="row g-4 mb-4">
+                    <div class="col-6 col-lg-3"><div class="statistik"><strong>B</strong><span>Akreditasi prodi</span></div></div>
+                    <div class="col-6 col-lg-3"><div class="statistik"><strong>8</strong><span>Semester (bisa 3,5 tahun)</span></div></div>
+                    <div class="col-6 col-lg-3"><div class="statistik"><strong>1.000+</strong><span>Mahasiswa aktif</span></div></div>
+                    <div class="col-6 col-lg-3"><div class="statistik"><strong>3.700+</strong><span>Alumni</span></div></div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="fokus h-100">
+                            <h3>Visi</h3>
+                            <p>Menjadi program studi unggul yang menghasilkan lulusan berdaya saing global di bidang informatika, dengan fokus pada aplikasi berskala besar dan kecerdasan buatan.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="fokus h-100">
+                            <h3>Misi</h3>
+                            <p>Menyelenggarakan pendidikan berbasis teknologi terkini untuk menghasilkan lulusan unggul, khususnya di pengembangan aplikasi berskala besar dan aplikasi berbasis AI.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="fokus h-100">
+                            <span class="lencana">Peminatan</span>
+                            <h3 class="mt-2">AI-Based Software Development</h3>
+                            <p class="mb-3">Machine Learning, Natural Language Processing, Computer Vision, dan Big Data.</p>
+                            <div class="d-flex flex-wrap gap-2"><span class="chip chip-aksen">Data Analyst</span><span class="chip chip-aksen">Data Scientist</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="fokus h-100">
+                            <span class="lencana">Peminatan</span>
+                            <h3 class="mt-2">Scalable Software Development</h3>
+                            <p class="mb-3">Sistem Terdistribusi, DevOps, Komputasi Awan, dan Pengembangan Aplikasi Mobile.</p>
+                            <div class="d-flex flex-wrap gap-2"><span class="chip chip-aksen">Software QA Analyst</span><span class="chip chip-aksen">Mobile Programmer</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 mt-1">
+                    <div class="col-lg-6">
+                        <h3 class="h5 mb-3">Kompetensi Inti</h3>
+                        <div class="d-flex flex-wrap gap-2"><span class="chip ">Logika dan algoritma</span><span class="chip ">Perancangan sistem</span><span class="chip ">Aplikasi web</span><span class="chip ">Aplikasi mobile</span><span class="chip ">Project-based learning</span></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h5 mb-3">Sertifikasi Mitra</h3>
+                        <div class="d-flex flex-wrap gap-2"><span class="chip chip-hijau">Microsoft</span><span class="chip chip-hijau">Red Hat</span><span class="chip chip-hijau">Huawei</span><span class="chip chip-hijau">PASAS Data Science</span></div>
+                    </div>
+                    <div class="col-12">
+                        <h3 class="h5 mb-3">Peluang Karier</h3>
+                        <div class="d-flex flex-wrap gap-2"><span class="chip chip-aksen">Software Engineer</span><span class="chip chip-aksen">Data Engineer</span><span class="chip chip-aksen">Technopreneur</span><span class="chip chip-aksen">Researcher</span><span class="chip chip-aksen">Akademisi</span></div>
+                    </div>
+                </div>
+                <p class="sumber">Sumber: situs resmi Universitas Mikroskil (mikroskil.ac.id). Angka dan akreditasi dapat berubah, cek kembali di situs resmi sebelum dikumpulkan.</p>
+            </div>
+        </section>
+
+        <section class="bagian" id="anggota">
+            <div class="container">
+                <div class="judul-bagian">
+                    <h2>Anggota Kelompok</h2>
+                    <p>Klik kartu untuk membuka halaman profil masing-masing.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <article class="kartu kartu-anggota h-100">
+                            <img src="img/foto.svg" alt="Foto Sesuaikan">
+                            <h3>Sesuaikan</h3>
+                            <p class="peran">Mahasiswa Teknik Informatika</p>
+                            <p>Profil, keahlian, dan proyek yang dikerjakan Sesuaikan.</p>
+                            <a href="sesuaikan.html" class="btn btn-garis btn-sm stretched-link">Lihat Profil</a>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <article class="kartu kartu-anggota h-100">
+                            <img src="img/zega.svg" alt="Foto Zega">
+                            <h3>Zega</h3>
+                            <p class="peran">Mahasiswa Teknik Informatika</p>
+                            <p>Profil, keahlian, dan proyek yang dikerjakan Zega.</p>
+                            <a href="zega.html" class="btn btn-garis btn-sm stretched-link">Lihat Profil</a>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <article class="kartu kartu-anggota h-100">
+                            <img src="img/rendy.svg" alt="Foto Rendy">
+                            <h3>Rendy</h3>
+                            <p class="peran">Mahasiswa Teknik Informatika</p>
+                            <p>Profil, keahlian, dan proyek yang dikerjakan Rendy.</p>
+                            <a href="rendy.html" class="btn btn-garis btn-sm stretched-link">Lihat Profil</a>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <article class="kartu kartu-anggota h-100">
+                            <img src="img/image.png" alt="Foto Jeri">
+                            <h3>Jeri</h3>
+                            <p class="peran">Mahasiswa Teknik Informatika</p>
+                            <p>Profil, keahlian, dan proyek yang dikerjakan Jeri.</p>
+                            <a href="jeri.html" class="btn btn-garis btn-sm stretched-link">Lihat Profil</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ===== AKHIR ISI HALAMAN ===== -->
+
+    <!-- ===== FOOTER: sama di semua halaman, JANGAN DIUBAH ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logo Portofolio Teknik Informatika" width="200" height="40"></a>
+                    <p>Portofolio kelompok mahasiswa Teknik Informatika Universitas Mikroskil. Berisi profil kampus, jurusan, dan karya tiap anggota.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4>Navigasi</h4>
+                    <a href="index.html">Beranda</a>
+                    <a href="sesuaikan.html">Sesuaikan</a>
+                    <a href="zega.html">Zega</a>
+                    <a href="rendy.html">Rendy</a>
+                    <a href="jeri.html">Jeri</a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4>Informasi Portofolio</h4>
+                    <ul class="info-footer">
+                        <li><b>Mata kuliah</b>Pengembangan Web Front-End</li>
+                        <li><b>Teknologi</b>HTML5, CSS3, Bootstrap 5, JavaScript</li>
+                        <li><b>Tahun</b>2026</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Kontak</h4>
+                    <p>Universitas Mikroskil<br>Jl. Thamrin, Medan<br>Sumatera Utara</p>
+                    <p>kelompok@email.com</p>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+            <div class="hak-cipta">&copy; 2026 Portofolio Kelompok: Sesuaikan, Zega, Rendy, dan Jeri. Dibuat untuk tugas Pengembangan Web Front-End.</div>
+        </div>
+    </footer>
+    <!-- ===== AKHIR FOOTER ===== -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
