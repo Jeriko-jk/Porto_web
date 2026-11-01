@@ -4,7 +4,7 @@ Cara buka: ekstrak folder, lalu buka index.html di browser (tanpa internet pun b
 
 Pembagian file:
 - index.html      : Beranda (kampus, jurusan, kartu anggota)
-- sesuaikan.html  : halaman Sesuaikan
+- sesu.html  : halaman Sesu
 - zega.html       : halaman Zega
 - rendy.html      : halaman Rendy
 - jeri.html       : halaman Jeri
