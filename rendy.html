@@ -1,506 +1,735 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rendy Samuel | Portofolio</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
+    <title>Rendy - Portofolio Kelompok</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+/* ============================= */
+/* BAGIAN PROYEK SAYA */
+/* ============================= */
 
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-            background: #070b14;
-            color: white;
-            overflow-x: hidden;
-        }
-
-        body::before {
-            content: "";
-            position: fixed;
-            width: 500px;
-            height: 500px;
-            background: #0755ff;
-            filter: blur(180px);
-            opacity: 0.12;
-            top: -150px;
-            left: -150px;
-            z-index: -1;
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(7, 11, 20, 0.85);
-            backdrop-filter: blur(15px);
-            z-index: 100;
-            border-bottom: 1px solid rgba(255,255,255,0.06);
-        }
-
-        .logo {
-            font-size: 23px;
-            font-weight: 700;
-            color: #48aaff;
-        }
-
-        nav ul {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #c5cbd8;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #42a5ff;
-        }
-
-        section {
-            padding: 110px 10%;
-        }
-
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 60px;
-        }
-
-        .hero-text {
-            max-width: 600px;
-        }
-
-        .hero-text .tag {
-            color: #42a5ff;
-            letter-spacing: 3px;
-            font-size: 13px;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-size: clamp(38px, 6vw, 65px);
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: #42a5ff;
-        }
-
-        .hero p {
-            color: #a5afc1;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 13px 25px;
-            background: #1687ff;
-            color: white;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #0065d9;
-            transform: translateY(-4px);
-            box-shadow: 0 0 25px rgba(22,135,255,0.4);
-        }
-
-        /* FOTO PROFIL DAN ANIMASI API BIRU */
-
-       .photo-area {
+.rendy-page .rendy-project {
+    height: 100%;
+    min-height: 320px;
+    padding: 30px;
     position: relative;
-    width: 320px;
-    height: 370px;
-}
-
-.photo-area {
-    position: relative;
-    width: 320px;
-    height: 370px;
+    overflow: hidden;
     isolation: isolate;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #101c32, #0b1425 75%);
+    border: 1px solid rgba(65, 155, 255, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: 0.35s ease;
 }
 
-.photo-area::before {
+/* Cahaya di belakang kartu */
+.rendy-page .rendy-project::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    right: -70px;
+    border-radius: 50%;
+    background: rgba(0, 132, 255, 0.18);
+    filter: blur(35px);
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+/* Garis dekorasi */
+.rendy-page .rendy-project::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 3px;
+    left: 30px;
+    top: 0;
+    background: #36aaff;
+    box-shadow: 0 0 15px #36aaff;
+    transition: 0.4s ease;
+}
+
+.rendy-page .rendy-project:hover {
+    transform: translateY(-9px);
+    border-color: #36aaff;
+    box-shadow: 0 15px 40px rgba(0, 132, 255, 0.18);
+}
+
+.rendy-page .rendy-project:hover::before {
+    transform: scale(1.4);
+}
+
+.rendy-page .rendy-project:hover::after {
+    width: 100px;
+}
+
+/* Ikon proyek */
+.rendy-page .rendy-project-icon {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #153e6c, #1266a9);
+    border: 1px solid rgba(100, 190, 255, 0.3);
+    font-size: 34px;
+    margin-bottom: 24px;
+    box-shadow: 0 0 25px rgba(35, 145, 255, 0.15);
+    transition: 0.3s ease;
+}
+
+.rendy-page .rendy-project:hover .rendy-project-icon {
+    box-shadow: 0 0 30px rgba(35, 145, 255, 0.4);
+    transform: translateY(-4px);
+}
+
+/* Judul */
+.rendy-page .rendy-project h3 {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 750;
+    margin: 16px 0 12px;
+    position: relative;
+}
+
+/* Deskripsi */
+.rendy-page .rendy-project p {
+    color: #a8bad2;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Label teknologi */
+.rendy-page .rendy-tag {
+    display: inline-block;
+    padding: 7px 13px;
+    margin: 4px 5px 4px 0;
+    border-radius: 30px;
+    color: #8acbff;
+    background: rgba(35, 135, 255, 0.12);
+    border: 1px solid rgba(70, 160, 255, 0.25);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    transition: 0.3s ease;
+}
+
+.rendy-page .rendy-tag:hover {
+    color: #ffffff;
+    background: #176bb5;
+    box-shadow: 0 0 15px rgba(35, 145, 255, 0.3);
+}
+
+/* Nomor besar */
+.rendy-page .rendy-project-number {
+    position: absolute;
+    right: 22px;
+    bottom: 10px;
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 1;
+    color: rgba(70, 155, 255, 0.10);
+    pointer-events: none;
+}
+
+/* Tampilan HP */
+@media (max-width: 576px) {
+    .rendy-page .rendy-project {
+        padding: 23px;
+        min-height: 300px;
+    }
+
+    .rendy-page .rendy-project h3 {
+        font-size: 19px;
+    }
+}
+
+    .rendy-hero {
+        padding: 75px 0;
+        background: linear-gradient(135deg, #071426, #102b50);
+        color: white;
+    }
+
+    .rendy-hero h1 {
+        color: #ffffff;
+        font-size: clamp(38px, 6vw, 65px);
+        font-weight: 800;
+        margin: 20px 0;
+    }
+
+    .rendy-section.dark .rendy-title h2 {
+        color: #ffffff;
+    }
+
+    .rendy-hero h1 span {
+        color: #55aaff;
+    }
+
+    .rendy-hero p {
+        color: #c0cee2;
+        max-width: 550px;
+        line-height: 1.8;
+    }
+
+    .rendy-label {
+        color: #65b5ff;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+
+.rendy-photo {
+    position: relative;
+    isolation: isolate;
+    max-width: 350px;
+    margin: auto;
+    padding: 7px;
+    border: 2px solid #168bff;
+    border-radius: 18px;
+    background: #071426;
+    box-shadow: 0 0 15px #087bff;
+}
+
+/* Cahaya api */
+.rendy-photo::before {
+    content: "";
+    position: absolute;
+    inset: -7px;
+    z-index: -1;
+    border-radius: 23px;
+    background: #087bff;
+    filter: blur(12px);
+    opacity: .7;
+    animation: apiMenyambar 1.2s infinite alternate;
+}
+
+/* Percikan cahaya */
+.rendy-photo::after {
     content: "";
     position: absolute;
     inset: -4px;
-    border-radius: 14px;
-    background: conic-gradient(
-        from 0deg,
-        transparent 0deg,
-        #1687ff 50deg,
-        transparent 100deg,
-        #65d5ff 180deg,
-        transparent 230deg,
-        #1687ff 300deg,
-        transparent 360deg
-    );
-
-    filter: blur(5px);
-    opacity: 0.8;
-    z-index: -1;
-    animation: apiBiru 5s linear infinite;
+    z-index: 2;
+    border: 2px solid #00cfff;
+    border-radius: 21px;
+    pointer-events: none;
+    animation: percikanApi .7s infinite alternate;
 }
 
-.photo-area img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 11px;
+.rendy-photo img {
     position: relative;
     z-index: 1;
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-@keyframes apiBiru {
-    from {
-        filter: blur(5px);
-        opacity: 0.5;
+@keyframes apiMenyambar {
+    0% {
+        opacity: .35;
+        filter: blur(7px);
+        box-shadow: 0 0 10px #006eff;
     }
-    to {
-        filter: blur(9px);
+
+    50% {
+        opacity: .95;
+        filter: blur(15px);
+        box-shadow: 0 0 25px #00bfff;
+    }
+
+    100% {
+        opacity: .6;
+        filter: blur(10px);
+        box-shadow: 0 0 18px #164bff;
+    }
+}
+
+@keyframes percikanApi {
+    0% {
+        opacity: .3;
+        box-shadow: 0 0 5px #00bfff;
+    }
+
+    100% {
         opacity: 1;
-    }
-}
-@keyframes apiNyala {
-    from {
-        opacity: 0.25;
-        box-shadow: 0 0 8px #087bff;
-    }
-    to {
-        opacity: 0.9;
-        box-shadow: 0 0 20px #087bff, 0 0 35px #0755ff;
+        box-shadow:
+            0 0 10px #00bfff,
+            inset 0 0 8px #087bff;
     }
 }
 
-        .section-title {
-            text-align: center;
-            font-size: 34px;
-            margin-bottom: 15px;
+    .rendy-section {
+        padding: 65px 0;
+        background: #f5f8fd;
+    }
+
+    .rendy-section.dark {
+        background: #0b1b31;
+        color: white;
+    }
+
+    .rendy-title {
+        margin-bottom: 30px;
+    }
+
+    .rendy-title small {
+        color: #2878db;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    .rendy-title h2 {
+        font-weight: 800;
+        margin-top: 8px;
+    }
+
+    .rendy-card {
+        height: 100%;
+        padding: 25px;
+        border-radius: 16px;
+        background: white;
+        border: 1px solid #e1e9f5;
+        box-shadow: 0 8px 25px rgba(0, 30, 70, .05);
+    }
+
+    .rendy-card h3 {
+        font-size: 19px;
+        font-weight: 800;
+        color: #142b49;
+    }
+
+    .rendy-card p {
+        color: #64748b;
+        line-height: 1.8;
+    }
+
+    .rendy-info {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .rendy-info li {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 12px 0;
+        border-bottom: 1px solid #e8edf5;
+        color: #64748b;
+    }
+
+    .rendy-info b {
+        color: #142b49;
+        text-align: right;
+    }
+
+    .rendy-tech-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+    }
+
+    .rendy-tech {
+        padding: 17px 8px;
+        text-align: center;
+        border-radius: 13px;
+        border: 1px solid #e1e9f5;
+        background: white;
+        color: #263b58;
+        font-weight: 700;
+        font-size: 13px;
+        transition: .2s;
+    }
+
+    .rendy-tech:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(30, 100, 200, .12);
+    }
+
+    .rendy-tech img {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    .rendy-project {
+        height: 100%;
+        padding: 25px;
+        border-radius: 16px;
+        background: white;
+        border: 1px solid #e1e9f5;
+    }
+
+    .rendy-project h3 {
+        color: #142b49;
+        font-size: 19px;
+        font-weight: 800;
+    }
+
+    .rendy-project p {
+        color: #64748b;
+        line-height: 1.7;
+    }
+
+    .rendy-tag {
+        display: inline-block;
+        padding: 5px 11px;
+        margin: 3px;
+        border-radius: 20px;
+        background: #e7f1ff;
+        color: #2366b6;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    @media (max-width: 576px) {
+        .rendy-tech-grid {
+            grid-template-columns: repeat(2, 1fr);
         }
 
-        .section-title span {
-            color: #42a5ff;
+        .rendy-hero {
+            padding: 50px 0;
         }
-
-        .section-desc {
-            text-align: center;
-            color: #8e9aae;
-            margin-bottom: 50px;
-        }
-
-        .about-box {
-            max-width: 800px;
-            margin: auto;
-            padding: 35px;
-            background: #101827;
-            border: 1px solid #1c2b42;
-            border-radius: 15px;
-            line-height: 1.9;
-            color: #b5bfd0;
-        }
-
-        .about-box strong {
-            color: #42a5ff;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #101827;
-            padding: 30px 20px;
-            border: 1px solid #1c2b42;
-            border-radius: 13px;
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-7px);
-            border-color: #1687ff;
-            box-shadow: 0 10px 30px rgba(0, 119, 255, 0.12);
-        }
-
-        .card i {
-            font-size: 45px;
-            margin-bottom: 18px;
-            display: block;
-        }
-
-        .card h3 {
-            font-size: 16px;
-        }
-
-        .card p {
-            color: #8e9aae;
-            font-size: 13px;
-            margin-top: 8px;
-        }
-
-        .contact-box {
-            max-width: 600px;
-            margin: auto;
-            text-align: center;
-            background: #101827;
-            border: 1px solid #1c2b42;
-            padding: 40px;
-            border-radius: 15px;
-        }
-
-        .contact-box p {
-            color: #a5afc1;
-            line-height: 1.8;
-            margin: 15px 0 25px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            color: #718096;
-            border-top: 1px solid #1c2b42;
-            font-size: 13px;
-        }
-
-        @media (max-width: 800px) {
-            nav {
-                padding: 18px 5%;
-            }
-
-            nav ul {
-                gap: 12px;
-            }
-
-            nav a {
-                font-size: 11px;
-            }
-
-            .hero {
-                flex-direction: column-reverse;
-                justify-content: center;
-                text-align: center;
-                padding-top: 140px;
-            }
-
-            .photo-area {
-                width: 260px;
-                height: 280px;
-            }
-
-            .photo-area img {
-                width: 230px;
-                height: 260px;
-            }
-
-            section {
-                padding: 90px 7%;
-            }
-
-            .hero h1 {
-                font-size: 40px;
-            }
-        }
-
-        @media (max-width: 430px) {
-            nav {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            nav ul {
-                gap: 15px;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
-
-    <nav>
-        <div class="logo">RENDY.</div>
-
-        <ul>
-            <li><a href="#beranda">Beranda</a></li>
-            <li><a href="#tentang">Tentang</a></li>
-            <li><a href="#keahlian">Keahlian</a></li>
-            <li><a href="#teknologi">Teknologi</a></li>
-            <li><a href="#kontak">Kontak</a></li>
-        </ul>
-    </nav>
-
-    <section class="hero" id="beranda">
-
-        <div class="hero-text">
-            <div class="tag">SELAMAT DATANG DI PORTOFOLIO SAYA</div>
-
-            <h1>
-                Membangun<br>
-                Pengalaman <span>Digital.</span>
-            </h1>
-
-            <p>
-                Halo! Saya Rendy Samuel Siringoringo,
-                mahasiswa Teknik Informatika yang tertarik
-                dengan dunia teknologi, pemrograman,
-                dan pengembangan web.
-            </p>
-
-            <a href="#tentang" class="btn">Kenali Saya</a>
-        </div>
-
-        <div class="photo-area">
-            <img src="rendy.jpeg" alt="Foto Rendy Samuel">
-        </div>
-
-    </section>
-
-    <section id="tentang">
-        <h2 class="section-title">Tentang <span>Saya</span></h2>
-        <p class="section-desc">Sedikit cerita tentang diri saya</p>
-
-        <div class="about-box">
-            Halo! Nama saya <strong>Rendy Samuel Siringoringo</strong>.
-            Saya merupakan mahasiswa Teknik Informatika
-            di <strong>Universitas Mikroskil</strong>.
-
-            <br><br>
-
-            Saya memiliki ketertarikan dalam bidang
-            <strong>Web Development dan Programming</strong>.
-            Saya senang mempelajari hal baru, mengeksplorasi
-            teknologi, dan mengembangkan kemampuan di dunia digital.
-
-            <br><br>
-
-            Di luar kegiatan kuliah, saya juga menyukai gaming
-            dan mengeksplorasi perkembangan teknologi.
-        </div>
-    </section>
-
-    <section id="keahlian">
-        <h2 class="section-title">Keahlian <span>Saya</span></h2>
-        <p class="section-desc">Beberapa kemampuan yang sedang saya kembangkan</p>
-
-        <div class="grid">
-
-            <div class="card">
-                <i class="devicon-html5-plain colored"></i>
-                <h3>HTML</h3>
-                <p>Struktur halaman web</p>
+    <!-- ===== NAVBAR: sama di semua halaman, JANGAN DIUBAH ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand logo"><img src="img/logo.svg" alt="Logo Portofolio Teknik Informatika" width="200" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama" aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuUtama">
+                    <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sesu.html">Sesu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="zega.html">Zega</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rendy.html">Rendy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="jeri.html">Jeri</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+    <!-- ===== AKHIR NAVBAR ===== -->
 
-            <div class="card">
-                <i class="devicon-css3-plain colored"></i>
-                <h3>CSS</h3>
-                <p>Desain dan tampilan web</p>
+    <!-- ===== ISI HALAMAN: UBAH DI SINI SAJA ===== -->
+    
+
+<main class="rendy-page">
+
+    <!-- PEMBUKA -->
+    <section class="rendy-hero">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-7 order-2 order-lg-1">
+                    <span class="rendy-label">MAHASISWA TEKNIK INFORMATIKA</span>
+
+                    <h1>
+                        Halo, saya<br>
+                        <span>Rendy Samuel.</span>
+                    </h1>
+
+                    <p>
+                        Saya mahasiswa Universitas Mikroskil yang memiliki
+                        ketertarikan pada pengembangan web dan pemrograman.
+                        Saya senang mempelajari teknologi baru dan mengembangkan
+                        kemampuan melalui berbagai proyek.
+                    </p>
+
+                    <a href="#tentang" class="btn btn-utama mt-3">
+                        Kenali Saya
+                    </a>
+                </div>
+
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div class="rendy-photo">
+                    <img src="img/rendy.jpeg" alt="Foto Rendy Samuel">
+                    </div>
+                </div>
+
             </div>
-
-            <div class="card">
-                <i class="devicon-python-plain colored"></i>
-                <h3>Python</h3>
-                <p>Pemrograman dasar</p>
-            </div>
-
-            <div class="card">
-                <i class="devicon-mysql-plain colored"></i>
-                <h3>Database</h3>
-                <p>Pengelolaan basis data</p>
-            </div>
-
         </div>
     </section>
 
-    <section id="teknologi">
-        <h2 class="section-title">Teknologi yang <span>Saya Pelajari</span></h2>
-        <p class="section-desc">Teknologi yang ingin terus saya kuasai</p>
+    <!-- TENTANG SAYA -->
+    <section class="rendy-section" id="tentang">
+        <div class="container">
 
-        <div class="grid">
-
-            <div class="card">
-                <i class="devicon-html5-plain colored"></i>
-                <h3>HTML5</h3>
+            <div class="rendy-title">
+                <small>01 / PROFIL</small>
+                <h2>Tentang Saya</h2>
             </div>
 
-            <div class="card">
-                <i class="devicon-css3-plain colored"></i>
-                <h3>CSS3</h3>
-            </div>
+            <div class="row g-4">
 
-            <div class="card">
-                <i class="devicon-javascript-plain colored"></i>
-                <h3>JavaScript</h3>
-            </div>
+                <div class="col-lg-7">
+                    <div class="rendy-card">
+                        <h3>Perkenalkan, saya Rendy.</h3>
+                        <p>
+                            Saya Rendy Samuel Siringoringo, mahasiswa
+                            Teknik Informatika di Universitas Mikroskil.
+                            Saya memiliki minat dalam Web Development
+                            dan Programming.
+                        </p>
+                        <p>
+                            Saya senang mengeksplorasi teknologi,
+                            bermain game, dan mempelajari bagaimana
+                            sebuah program dapat dibuat serta dikembangkan.
+                        </p>
+                    </div>
+                </div>
 
-            <div class="card">
-                <i class="devicon-bootstrap-plain colored"></i>
-                <h3>Bootstrap</h3>
-            </div>
+                <div class="col-lg-5">
+                    <div class="rendy-card">
+                        <h3>Informasi Diri</h3>
 
-            <div class="card">
-                <i class="devicon-python-plain colored"></i>
-                <h3>Python</h3>
-            </div>
+                        <ul class="rendy-info mt-3">
+                            <li><span>Nama</span><b>Rendy Samuel Siringoringo</b></li>
+                            <li><span>Kampus</span><b>Universitas Mikroskil</b></li>
+                            <li><span>Program Studi</span><b>Teknik Informatika</b></li>
+                            <li><span>Minat</span><b>Web Development</b></li>
+                            <li><span>Hobi</span><b>Gaming</b></li>
+                        </ul>
+                    </div>
+                </div>
 
-            <div class="card">
-                <i class="devicon-flutter-plain colored"></i>
-                <h3>Flutter</h3>
             </div>
-
-            <div class="card">
-                <i class="devicon-mysql-plain colored"></i>
-                <h3>MySQL</h3>
-            </div>
-
         </div>
     </section>
 
-    <section id="kontak">
-        <h2 class="section-title">Hubungi <span>Saya</span></h2>
-        <p class="section-desc">Terbuka untuk terhubung dan berbagi ide</p>
+    <!-- KEAHLIAN -->
+    <section class="rendy-section dark">
+        <div class="container">
 
-        <div class="contact-box">
-            <h3>Mari Terhubung!</h3>
-            <p>
-                Terima kasih sudah mengunjungi portofolio saya.
-                Silakan hubungi saya melalui email.
-            </p>
+            <div class="rendy-title">
+                <small>02 / KEMAMPUAN</small>
+                <h2>Keahlian Saya</h2>
+                <p class="text-light">
+                    Kemampuan yang sudah saya pelajari.
+                </p>
+            </div>
 
-            <a href="mailto:emailkamu@example.com" class="btn">
-                Kirim Email
-            </a>
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="rendy-card">
+                        <h3>HTML</h3>
+                        <p>Membuat struktur halaman website.</p>
+
+                        <h3>CSS</h3>
+                        <p>Mengatur tampilan dan desain website.</p>
+
+                        <h3>Python</h3>
+                        <p>Mempelajari logika dan dasar pemrograman.</p>
+
+                        <h3>Database</h3>
+                        <p>Mempelajari pengelolaan dan penyimpanan data.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="rendy-card">
+                        <h3 class="mb-4">Teknologi yang Saya Pelajari</h3>
+
+                        <div class="rendy-tech-grid">
+
+                            <div class="rendy-tech">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                                HTML
+                            </div>
+
+                            <div class="rendy-tech">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                                CSS
+                            </div>
+
+                            <div class="rendy-tech">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                JavaScript
+                            </div>
+
+                            <div class="rendy-tech">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                                Bootstrap
+                            </div>
+
+                            <div class="rendy-tech">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                Python
+                            </div>
+                            <div class="rendy-tech">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Footer">
+                                Footer
+                            </div>
+                            <div class="rendy-tech">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="Database">
+                                Database
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <footer>
-        © 2026 Rendy Samuel Siringoringo. Dibuat dengan semangat belajar.
+<!-- PROYEK -->
+<section class="rendy-section">
+    <div class="container">
+
+        <div class="rendy-title">
+            <small>03 / KARYA</small>
+            <h2>Proyek Saya</h2>
+            <p>Beberapa proyek dalam proses pembelajaran.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- PROYEK 1 -->
+            <div class="col-md-6">
+                <div class="rendy-project">
+                    <img src="img/proyek-porto.svg"
+                        class="img-fluid mb-3"
+                        alt="Website Portofolio">
+
+                    <h3>Website Portofolio Kelompok</h3>
+
+                    <p>
+                        Website portofolio kelompok yang dibuat
+                        menggunakan HTML, CSS, dan Bootstrap.
+                    </p>
+
+                    <span class="rendy-tag">HTML</span>
+                    <span class="rendy-tag">CSS</span>
+                    <span class="rendy-tag">Bootstrap</span>
+
+                </div>
+            </div>
+
+            <!-- PROYEK 2 -->
+            <div class="col-md-6">
+                <div class="rendy-project">
+                    <div class="mb-3"
+                        style="font-size:45px;color:#2878db;font-weight:800;">
+                        PY
+                    </div>
+
+                    <h3>Latihan Pemrograman Python</h3>
+
+                    <p>
+                        Mempelajari dasar pemrograman Python,
+                        seperti class, list, dictionary,
+                        dan pengolahan data sederhana.
+                    </p>
+
+                    <span class="rendy-tag">Python</span>
+                    <span class="rendy-tag">Programming</span>
+                </div>
+            </div>
+
+            <!-- PROYEK 3 -->
+            <div class="col-md-6">
+                <div class="rendy-project">
+                    <div class="mb-3"
+                        style="font-size:45px;color:#2878db;">
+                        📋
+                    </div>
+
+                    <h3>Sistem Absensi Sederhana</h3>
+
+                    <p>
+                        Latihan membuat program untuk mencatat
+                        data kehadiran mahasiswa dan dosen.
+                    </p>
+
+                    <span class="rendy-tag">Python</span>
+                    <span class="rendy-tag">Class</span>
+                </div>
+            </div>
+
+            <!-- PROYEK 4 -->
+            <div class="col-md-6">
+                <div class="rendy-project">
+                    <div class="mb-3"
+                        style="font-size:45px;color:#2878db;">
+                        🗄️
+                    </div>
+
+                    <h3>Pengolahan Database Penjualan</h3>
+
+                    <p>
+                        Latihan mengelola data pelanggan,
+                        pesanan, dan penjualan menggunakan database.
+                    </p>
+
+                    <span class="rendy-tag">MySQL</span>
+                    <span class="rendy-tag">Database</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+    <!-- ===== AKHIR ISI HALAMAN ===== -->
+
+    <!-- ===== FOOTER: sama di semua halaman, JANGAN DIUBAH ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logo Portofolio Teknik Informatika" width="200" height="40"></a>
+                    <p>Portofolio kelompok mahasiswa Teknik Informatika Universitas Mikroskil. Berisi profil kampus, jurusan, dan karya tiap anggota.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4>Navigasi</h4>
+                    <a href="index.html">Beranda</a>
+                    <a href="sesu.html">Sesu</a>
+                    <a href="zega.html">Zega</a>
+                    <a href="rendy.html">Rendy</a>
+                    <a href="jeri.html">Jeri</a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4>Informasi Portofolio</h4>
+                    <ul class="info-footer">
+                        <li><b>Mata kuliah</b>Pengembangan Web Front-End</li>
+                        <li><b>Teknologi</b>HTML5, CSS3, Bootstrap 5, JavaScript</li>
+                        <li><b>Tahun</b>2026</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Kontak</h4>
+                    <p>Universitas Mikroskil<br>Jl. Thamrin, Medan<br>Sumatera Utara</p>
+                    <p>kelompok@email.com</p>
+                </div>
+            </div>
+            <div class="hak-cipta">&copy; 2026 Portofolio Kelompok: Sesu, Zega, Rendy, dan Jeri. Dibuat untuk tugas Pengembangan Web Front-End.</div>
+        </div>
     </footer>
+    <!-- ===== AKHIR FOOTER ===== -->
 
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
