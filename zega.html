@@ -33,51 +33,125 @@
     <!-- ===== AKHIR NAVBAR ===== -->
 
     <!-- ===== ISI HALAMAN: UBAH DI SINI SAJA ===== -->
-    <main>
-        <section class="judul-halaman">
+    <main class="zega">
+        <section class="zega-hero">
             <div class="container">
-                <h1>Profil Zega</h1>
-                <p>Halaman pribadi anggota kelompok portofolio.</p>
-            </div>
-        </section>
-
-        <section class="bagian">
-            <div class="container">
-                <div class="row g-4 g-lg-5">
-                    <div class="col-lg-4">
-                        <div class="profil">
-                            <img src="img/zega.svg" alt="Foto Zega">
-                            <ul class="data-diri">
-                                <li><span>Nama</span><b>Zega</b></li>
-                                <li><span>Program studi</span><b>Teknik Informatika</b></li>
-                                <li><span>Kampus</span><b>Universitas Mikroskil</b></li>
-                                <li><span>Kelompok</span><b>Portofolio Kelompok</b></li>
-                                <li><span>Fokus</span><b>Web Front-End</b></li>
-                            </ul>
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <span class="zega-sapa">Halo, saya</span>
+                        <h1 class="zega-nama">Zega</h1>
+                        <p class="zega-peran">Mahasiswa Teknik Informatika Universitas Mikroskil yang sedang mendalami <b>Web Front-End</b>.</p>
+                        <div class="zega-aksi">
+                            <a href="#projek" class="btn btn-utama">Lihat Projek</a>
+                            <a href="#kontak" class="btn btn-garis">Hubungi Saya</a>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <h2 class="mb-3">Tentang Saya</h2>
-                        <p>Mahasiswa Teknik Informatika Universitas Mikroskil yang sedang belajar pengembangan web front-end. Di halaman ini saya menampilkan profil singkat, hal yang sedang saya pelajari, dan proyek yang saya kerjakan.</p>
-                        <p>Saya suka memahami alur sebuah program sebelum menulisnya, supaya hasilnya rapi dan bisa saya jelaskan dengan baik.</p>
-                        <h3 class="h5 mt-4 mb-3">Yang Sedang Saya Pelajari</h3>
-                        <div class="d-flex flex-wrap gap-2 mb-4"><span class="chip ">HTML5</span><span class="chip ">CSS3</span><span class="chip ">Bootstrap 5</span><span class="chip ">JavaScript dasar</span><span class="chip ">Figma</span></div>
-                        <h3 class="h5 mb-3">Anggota Lainnya</h3>
-                        <div class="d-flex flex-wrap gap-2"><a href="sesu.html" class="btn btn-garis btn-sm">Sesu</a><a href="rendy.html" class="btn btn-garis btn-sm">Rendy</a><a href="jeri.html" class="btn btn-garis btn-sm">Jeri</a><a href="index.html#anggota" class="btn btn-utama btn-sm">Semua Anggota</a></div>
+                    <div class="col-lg-5 order-1 order-lg-2 text-center">
+                        <div class="zega-foto">
+                            <img src="./img/zega.jpeg" alt="Foto Zega">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="bagian bg-lembut">
+        <nav class="zega-subnav" aria-label="Navigasi halaman Zega">
+            <a href="#tentang">Tentang Saya</a>
+            <a href="#skills">Skills</a>
+            <a href="#projek">Projek</a>
+            <a href="#sertifikat">Sertifikat</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+        <section class="zega-bagian" id="tentang">
             <div class="container">
-                <div class="judul-bagian">
-                    <h2>Proyek Zega</h2>
-                    <p>Karya yang dikerjakan selama perkuliahan.</p>
+                <div class="zega-judul">
+                    <span>01</span>
+                    <h2>Tentang Saya</h2>
                 </div>
-                <div class="row g-4 justify-content-center">
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="zega-panel h-100">
+                            <p>Mahasiswa Teknik Informatika Universitas Mikroskil yang sedang belajar pengembangan web front-end. Di halaman ini saya menampilkan profil singkat, keahlian, proyek, dan sertifikat yang sudah saya kumpulkan.</p>
+                            <p class="mb-0">Saya suka memahami alur sebuah program sebelum menulisnya, supaya hasilnya rapi dan bisa saya jelaskan dengan baik.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <ul class="zega-panel zega-data h-100">
+                            <li><span>Nama</span><b>Zega</b></li>
+                            <li><span>Program studi</span><b>Teknik Informatika</b></li>
+                            <li><span>Kampus</span><b>Universitas Mikroskil</b></li>
+                            <li><span>Kelompok</span><b>Portofolio Kelompok</b></li>
+                            <li><span>Fokus</span><b>Web Front-End</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="zega-bagian zega-bagian-lembut" id="skills">
+            <div class="container">
+                <div class="zega-judul">
+                    <span>02</span>
+                    <h2>Skills</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="zega-panel h-100">
+                            <h3 class="zega-sub">Teknis</h3>
+                            <div class="zega-skill">
+                                <div class="zega-skill-atas"><span>HTML5</span><span>80%</span></div>
+                                <div class="zega-bar"><span style="width: 80%"></span></div>
+                            </div>
+                            <div class="zega-skill">
+                                <div class="zega-skill-atas"><span>CSS3</span><span>70%</span></div>
+                                <div class="zega-bar"><span style="width: 70%"></span></div>
+                            </div>
+                            <div class="zega-skill">
+                                <div class="zega-skill-atas"><span>Bootstrap 5</span><span>70%</span></div>
+                                <div class="zega-bar"><span style="width: 70%"></span></div>
+                            </div>
+                            <div class="zega-skill">
+                                <div class="zega-skill-atas"><span>JavaScript dasar</span><span>45%</span></div>
+                                <div class="zega-bar"><span style="width: 45%"></span></div>
+                            </div>
+                            <div class="zega-skill mb-0">
+                                <div class="zega-skill-atas"><span>Figma</span><span>55%</span></div>
+                                <div class="zega-bar"><span style="width: 55%"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="zega-panel h-100">
+                            <h3 class="zega-sub">Tools</h3>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="chip">VS Code</span>
+                                <span class="chip">Git &amp; GitHub</span>
+                                <span class="chip">Figma</span>
+                                <span class="chip">Google Chrome DevTools</span>
+                            </div>
+                            <h3 class="zega-sub">Soft Skills</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="chip chip-hijau">Kerja tim</span>
+                                <span class="chip chip-hijau">Problem solving</span>
+                                <span class="chip chip-hijau">Komunikasi</span>
+                                <span class="chip chip-hijau">Manajemen waktu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="zega-bagian" id="projek">
+            <div class="container">
+                <div class="zega-judul">
+                    <span>03</span>
+                    <h2>Projek</h2>
+                </div>
+                <div class="row g-4">
                     <div class="col-md-6 col-lg-4">
-                        <article class="kartu h-100">
+                        <article class="kartu zega-kartu h-100">
                             <img src="img/proyek-porto.svg" class="img-fluid" alt="Website Portofolio Kelompok">
                             <div class="kartu-isi">
                                 <span class="lencana">Web</span>
@@ -87,10 +161,147 @@
                             </div>
                         </article>
                     </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="kartu zega-kartu h-100">
+                            <img src="img/proyek-figma.svg" class="img-fluid" alt="Desain UI di Figma">
+                            <div class="kartu-isi">
+                                <span class="lencana">Desain</span>
+                                <h3>Desain UI Halaman Profil</h3>
+                                <p>Rancangan tampilan halaman profil di Figma sebelum diubah menjadi kode HTML dan CSS.</p>
+                                <div><span class="tag">Figma</span><span class="tag">UI Design</span></div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="kartu zega-kartu zega-kartu-kosong h-100">
+                            <div class="kartu-isi">
+                                <span class="lencana">Segera</span>
+                                <h3>Projek Berikutnya</h3>
+                                <p>Sedang dikerjakan. Projek baru akan ditambahkan di sini.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="zega-bagian zega-bagian-lembut" id="sertifikat">
+            <div class="container">
+                <div class="zega-judul">
+                    <span>04</span>
+                    <h2>Sertifikat</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="zega-panel zega-sertif h-100">
+                            <span class="zega-sertif-ikon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M8.5 14l-1.5 7 5-3 5 3-1.5-7"/></svg>
+                            </span>
+                            <h3>Belajar Dasar Pemrograman Web</h3>
+                            <p>Penerbit Sertifikat</p>
+                            <span class="zega-tahun">2026</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="zega-panel zega-sertif h-100">
+                            <span class="zega-sertif-ikon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M8.5 14l-1.5 7 5-3 5 3-1.5-7"/></svg>
+                            </span>
+                            <h3>Dasar Desain UI dengan Figma</h3>
+                            <p>Penerbit Sertifikat</p>
+                            <span class="zega-tahun">2026</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="zega-panel zega-sertif h-100">
+                            <span class="zega-sertif-ikon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M8.5 14l-1.5 7 5-3 5 3-1.5-7"/></svg>
+                            </span>
+                            <h3>Seminar Teknologi Informasi</h3>
+                            <p>Universitas Mikroskil</p>
+                            <span class="zega-tahun">2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="zega-bagian" id="kontak">
+            <div class="container">
+                <div class="zega-judul">
+                    <span>05</span>
+                    <h2>Kontak</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <div class="zega-panel h-100">
+                            <p>Ada pertanyaan atau ingin bekerja sama? Hubungi saya lewat salah satu kontak di bawah.</p>
+                            <ul class="zega-kontak">
+                                <li><b>Email</b><a href="mailto:zega@email.com">zega@email.com</a></li>
+                                <li><b>GitHub</b><a href="https://github.com/" target="_blank" rel="noopener">github.com/zega</a></li>
+                                <li><b>Instagram</b><a href="https://instagram.com/" target="_blank" rel="noopener">@zega</a></li>
+                                <li><b>Lokasi</b><span>Medan, Sumatera Utara</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <form class="zega-panel h-100" id="form-zega" onsubmit="return kirimPesanZega()">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label for="zega-nama" class="form-label">Nama</label>
+                                    <input type="text" class="form-control" id="zega-nama" placeholder="Nama kamu">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="zega-email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="zega-email" placeholder="nama@email.com">
+                                </div>
+                                <div class="col-12">
+                                    <label for="zega-isi" class="form-label">Pesan</label>
+                                    <textarea class="form-control" id="zega-isi" rows="4" placeholder="Tulis pesan"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-utama mt-3">Kirim Pesan</button>
+                            <div id="pesan-zega" class="pesan"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="zega-bagian pt-0">
+            <div class="container">
+                <div class="zega-panel zega-penutup">
+                    <h2>Anggota Lainnya</h2>
+                    <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+                        <a href="sesu.html" class="btn btn-garis btn-sm">Sesu</a>
+                        <a href="rendy.html" class="btn btn-garis btn-sm">Rendy</a>
+                        <a href="jeri.html" class="btn btn-garis btn-sm">Jeri</a>
+                    </div>
+                    <a href="index.html" class="btn btn-utama">Kembali ke Beranda</a>
                 </div>
             </div>
         </section>
     </main>
+
+    <script>
+        function kirimPesanZega() {
+            var nama = document.getElementById("zega-nama").value.trim();
+            var email = document.getElementById("zega-email").value.trim();
+            var isi = document.getElementById("zega-isi").value.trim();
+            var pesan = document.getElementById("pesan-zega");
+
+            if (nama === "" || email === "" || isi === "") {
+                pesan.className = "pesan alert alert-danger mt-3 mb-0 py-2";
+                pesan.textContent = "Nama, email, dan pesan wajib diisi.";
+                return false;
+            }
+
+            pesan.className = "pesan alert alert-success mt-3 mb-0 py-2";
+            pesan.textContent = "Terima kasih " + nama + ", pesan kamu sudah terkirim (simulasi tampilan).";
+            document.getElementById("form-zega").reset();
+            return false;
+        }
+    </script>
     <!-- ===== AKHIR ISI HALAMAN ===== -->
 
     <!-- ===== FOOTER: sama di semua halaman, JANGAN DIUBAH ===== -->
@@ -133,3 +344,5 @@
 </body>
 
 </html>
+
+
